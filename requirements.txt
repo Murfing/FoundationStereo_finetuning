@@ -1,0 +1,13 @@
+# Local inference and evaluation (inference/). Training ran on Google Colab, which installs its own packages in the notebooks.
+# Tested with Python 3.11, torch 2.6.0 + CUDA 12.4, opencv 4.11, numpy 1.26.
+torch>=2.4
+torchvision
+numpy<2
+opencv-python
+omegaconf
+timm
+einops
+scipy
+imageio
+pillow
+pandas

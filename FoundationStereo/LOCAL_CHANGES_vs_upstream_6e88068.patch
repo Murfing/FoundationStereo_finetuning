@@ -1,0 +1,31 @@
+diff --git a/depth_anything/dpt.py b/depth_anything/dpt.py
+index 442a04a..f135f02 100644
+--- a/depth_anything/dpt.py
++++ b/depth_anything/dpt.py
+@@ -150,11 +150,21 @@ class DPT_DINOv2(nn.Module):
+ 
+         assert encoder in ['vits', 'vitb', 'vitl']
+ 
+-        # in case the Internet connection is not stable, please load the DINOv2 locally
+-        # if localhub:
+-        #     self.pretrained = torch.hub.load('torchhub/facebookresearch_dinov2_main', 'dinov2_{:}14'.format(encoder), source='local', pretrained=False)
+-        # else:
+-        self.pretrained = torch.hub.load('facebookresearch/dinov2', 'dinov2_{:}14'.format(encoder), pretrained=pretrained_dino)
++        model_name = 'dinov2_{:}14'.format(encoder)
++        local_repo = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'dinov2'))
++        try:
++            self.pretrained = torch.hub.load(
++                local_repo,
++                model_name,
++                source='local',
++                pretrained=pretrained_dino
++            )
++        except Exception:
++            self.pretrained = torch.hub.load(
++                'facebookresearch/dinov2',
++                model_name,
++                pretrained=pretrained_dino
++            )
+ 
+ 
+         dim = self.pretrained.blocks[0].attn.qkv.in_features

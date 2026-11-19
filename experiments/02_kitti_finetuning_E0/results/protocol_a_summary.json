@@ -1,0 +1,93 @@
+{
+  "protocol": "A",
+  "notebook": "colab_kitti_bundle_v2/notebook/foundationstereo_kitti_finetuning_v2.ipynb",
+  "training": "all 194 KITTI 2012 pairs",
+  "validation": "40 KITTI 2015 pairs",
+  "test": "held-out 160 KITTI 2015 pairs",
+  "fine_tuning": {
+    "max_steps": 5000,
+    "lr": 1e-05,
+    "seed": 2025,
+    "frozen": "DINOv2 backbone",
+    "eval_interval": 50,
+    "stopped_at_step": 500,
+    "stop_reason": "early stopping, no validation improvement for 3 evaluations"
+  },
+  "best_checkpoint_step": 350,
+  "best_validation_d1_noc": 1.4421,
+  "validation_curve_d1_noc": {
+    "50": 2.091,
+    "100": 1.6543,
+    "150": 1.5687,
+    "200": 1.5094,
+    "250": 1.4736,
+    "300": 1.4675,
+    "350": 1.4421,
+    "400": 1.4486,
+    "450": 1.5006,
+    "500": 1.4674
+  },
+  "results": {
+    "zero_shot_validation": {
+      "all": {
+        "weighted_epe": 0.8745,
+        "global_d1": 2.7182,
+        "mean_image_d1": 2.7636
+      },
+      "noc": {
+        "weighted_epe": 0.8661,
+        "global_d1": 2.6866,
+        "mean_image_d1": 2.7294
+      }
+    },
+    "fine_tuned_validation": {
+      "all": {
+        "weighted_epe": 0.7369,
+        "global_d1": 1.472,
+        "mean_image_d1": 1.4598
+      },
+      "noc": {
+        "weighted_epe": 0.7292,
+        "global_d1": 1.4421,
+        "mean_image_d1": 1.4327
+      }
+    },
+    "zero_shot_test": {
+      "all": {
+        "weighted_epe": 0.8545,
+        "global_d1": 2.8561,
+        "mean_image_d1": 2.9054
+      },
+      "noc": {
+        "weighted_epe": 0.8351,
+        "global_d1": 2.7549,
+        "mean_image_d1": 2.8204
+      }
+    },
+    "fine_tuned_test": {
+      "all": {
+        "weighted_epe": 0.7343,
+        "global_d1": 1.8623,
+        "mean_image_d1": 1.7978
+      },
+      "noc": {
+        "weighted_epe": 0.7152,
+        "global_d1": 1.7146,
+        "mean_image_d1": 1.6744
+      }
+    }
+  },
+  "middlebury_retention": {
+    "split": "Middlebury Eval3 trainingH (15 scenes), half resolution, non-occluded mask (mask0nocc == 255), 32 iters",
+    "aggregation": "pixel-weighted over all scenes",
+    "zero_shot": {
+      "weighted_epe": 0.3634,
+      "weighted_bp2": 1.0987,
+      "source": "foundationstereo_middlebury_resultscorrectmetric.zip"
+    },
+    "protocol_a_fine_tuned": {
+      "weighted_epe": 0.6345,
+      "weighted_bp2": 2.4225
+    }
+  }
+}

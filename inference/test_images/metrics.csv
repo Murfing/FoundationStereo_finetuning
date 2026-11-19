@@ -1,0 +1,3 @@
+model,pair,seconds,precision,valid_px,epe,d1,bp1,bp2,bp3,d1_bad_px,bp2_bad_px
+zero_shot,demo_foundationstereo,5.4001,fp32,,,,,,,,
+zero_shot,middlebury_Adirondack,16.7052,fp32,1298347,0.32543525099754333,0.9768574964936183,3.211699183654293,1.3395494424834038,1.0538014875838277,12683,17392

@@ -1,0 +1,294 @@
+=====================================================================================================
+ FoundationStereo inference - run commands
+ Script : inference/infer.py
+ Models : inference/models/        Registry: inference/models.json
+=====================================================================================================
+
+Run every command from the "Computer vision" folder:
+
+    cd "C:\Users\ashuk\Desktop\Computer vision"
+
+The commands are one line each. In PowerShell, a long command can be split over several lines with a
+backtick (`) at the end of each line.
+
+
+-----------------------------------------------------------------------------------------------------
+ 1. MODELS
+-----------------------------------------------------------------------------------------------------
+
+ --model name     File in inference/models/                       Status         What it is
+ ---------------  ----------------------------------------------  -------------  -----------------------------------------
+ zero_shot        zero_shot_foundationstereo.pth (+ cfg.yaml)     PRESENT        original FoundationStereo, no fine-tuning
+ E0_A             E0_A_full_ft_protocol_a.pth                     NOT AVAILABLE  full fine-tune, Protocol A
+ E0_B             E0_B_full_ft_protocol_b.pth                     PRESENT        full fine-tune, Protocol B (best step 700)
+ E1               E1_bn_locked.pth                                PRESENT        full fine-tune, BatchNorm locked (best step 400)
+ E2               E2_gru_only.pth                                 PRESENT        GRU block + upsampler only (best step 600)
+ E3a              E3a_lora_all.pth  (+ E3a_lora_all_adapter.pth)  PRESENT        LoRA r=8, all layers outside DepthAnything (step 350)
+ E3b              E3b_lora_gru.pth  (+ E3b_lora_gru_adapter.pth)  PRESENT        LoRA r=8, GRU block + upsampler (step 950)
+
+ Aliases also work, e.g. zs / base / pretrained, e0 / protocol_a, e0b, bn_locked, gru_only, lora_all, lora_gru.
+ Case does not matter.
+
+ E1/E2/E3a/E3b are from the SECOND run of the E1/E2/LoRA notebook (the Drive export). Their test metrics are in
+   experiments/03_retention_E1_E3/results/run2/ (e.g. E1 KITTI test D1-all 1.5444, Middlebury BP-2 2.0831).
+   The first run's numbers (E1 1.4979) belong to checkpoints that were overwritten on Drive.
+ E3a / E3b: the full checkpoints are used. The small *_adapter.pth files are only a fallback, used when a full file is
+   missing. Run-1 adapters are kept in models/archive_run1/ (not in the registry; use them with --adapter).
+
+ E0_A: the Protocol A notebook saved it only to Colab storage (/content/...protocol_a_finetuned.pth), which is wiped
+   when the session ends. If you ever get a copy, put it in inference/models/ as E0_A_full_ft_protocol_a.pth.
+ Another file or location: edit inference/models.json, or pass the file with --ckpt (section 6).
+
+ Check which models are found:
+    python inference/infer.py --list
+
+
+-----------------------------------------------------------------------------------------------------
+ 2. GENERAL FORMAT
+-----------------------------------------------------------------------------------------------------
+
+    python inference/infer.py --model <MODEL[,MODEL,...] | all>  <INPUT>  [OPTIONS]
+
+ INPUT is one of:
+    --test_images [folder]      (default inference/test_images; results saved INSIDE each pair folder)
+    --left <left image> --right <right image> [--gt <gt disparity>] [--mask <mask png>]
+    --left_dir <folder> --right_dir <folder> [--gt_dir <folder>] [--pattern "<glob>"]
+    --scenes_dir <folder of scenes with im0.png/im1.png> [--gt_root <folder with <scene>/disp0GT.pfm>]
+
+ Help with every option:
+    python inference/infer.py --help
+
+
+-----------------------------------------------------------------------------------------------------
+ 2b. TEST_IMAGES FOLDER  (easiest way: drop images in, results appear next to them)
+-----------------------------------------------------------------------------------------------------
+
+ Put each stereo pair in its own sub-folder of inference/test_images/:
+
+    inference/test_images/<any_name>/left.png     required (im0.png also works)
+    inference/test_images/<any_name>/right.png    required (im1.png also works)
+    inference/test_images/<any_name>/K.txt        optional -> depth map in metres (format: see HOW_TO_ADD_IMAGES.txt)
+    inference/test_images/<any_name>/gt.png|.pfm  optional -> EPE / D1 / BP-2
+    inference/test_images/<any_name>/mask0nocc.png optional -> evaluate only pixels == 255
+
+ Run every pair in the folder:
+    python inference/infer.py --model zero_shot --test_images
+    python inference/infer.py --model zero_shot --test_images --fp32 --scale 0.5          (GTX 1650)
+    python inference/infer.py --model zero_shot,E0_B,E3a,E3b --test_images --fp32 --scale 0.5
+
+ Another folder with the same layout:
+    python inference/infer.py --model E3a --test_images "D:\my_stereo_pairs"
+
+ Written INTO each pair folder:
+    <model>_disp.png     colour disparity (red/yellow = near, blue = far)
+    <model>_vis.png      left image | disparity side by side (like the official README picture)
+    <model>_disp.npy     raw disparity in pixels
+    <model>_depth.png    colour depth map          (only if K.txt is in the folder)
+    <model>_depth_m.npy  depth in metres            (only if K.txt is in the folder)
+    comparison.png       all models stacked         (only when running more than one model)
+ metrics.csv for all pairs goes into the test_images folder itself (or --out_dir if given).
+
+ Included examples: demo_foundationstereo (official demo + K.txt -> depth),
+                    middlebury_Adirondack (GT + mask -> metrics).
+
+
+-----------------------------------------------------------------------------------------------------
+ 3. SINGLE STEREO PAIR
+-----------------------------------------------------------------------------------------------------
+
+ Demo pair shipped with the FoundationStereo code:
+    python inference/infer.py --model zero_shot --left FoundationStereo/assets/left.png --right FoundationStereo/assets/right.png
+
+ Your own images (paths with spaces need quotes):
+    python inference/infer.py --model E0_B --left "D:\stereo\left.png" --right "D:\stereo\right.png"
+
+ With ground truth -> prints EPE / D1 / BP-2:
+   KITTI ground truth is a 16-bit png (value / 256, 0 = invalid). Middlebury ground truth is a .pfm (inf = invalid).
+    python inference/infer.py --model E3a --left image_2/000010_10.png --right image_3/000010_10.png --gt disp_occ_0/000010_10.png
+
+ With an evaluation mask (only pixels == 255 count, e.g. Middlebury non-occluded):
+    python inference/infer.py --model zero_shot --left scene/im0.png --right scene/im1.png --gt scene/disp0GT.pfm --mask scene/mask0nocc.png
+
+
+-----------------------------------------------------------------------------------------------------
+ 4. COMPARE SEVERAL MODELS
+-----------------------------------------------------------------------------------------------------
+
+ A comma-separated list (no spaces) or "all".
+ Models are loaded one after another, so GPU memory use is the same as for one model.
+ Writes outputs/comparison/<pair>_compare.png: the left image, then the GT, then each model, with metrics in the labels.
+
+    python inference/infer.py --model zero_shot,E0_B,E3a,E3b --left FoundationStereo/assets/left.png --right FoundationStereo/assets/right.png
+    python inference/infer.py --model all --left L.png --right R.png --gt GT.png
+
+ "all" skips models whose files are missing, with a warning. Naming a missing model directly stops with an error.
+
+
+-----------------------------------------------------------------------------------------------------
+ 5. FOLDERS / DATASETS
+-----------------------------------------------------------------------------------------------------
+
+ Middlebury trainingH (the data already in data), all 15 scenes, with GT and the mask0nocc mask:
+    python inference/infer.py --model zero_shot,E0_B,E3a,E3b --scenes_dir data/middlebury/raw/data-H/MiddEval3/trainingH --gt_root data/middlebury/raw/gt0-H/MiddEval3/trainingH
+
+   This uses the same metric as the notes: BP-2 on non-occluded pixels, pixel-weighted ("weighted") and mean over scenes.
+
+ Only the first N pairs:
+    ... --limit 2
+
+ KITTI 2015 (left = image_2, right = image_3, GT = disp_occ_0 for "all", disp_noc_0 for "noc"):
+    python inference/infer.py --model E0_B --left_dir KITTI2015/training/image_2 --right_dir KITTI2015/training/image_3 --gt_dir KITTI2015/training/disp_occ_0 --pattern "*_10.png"
+
+ KITTI 2012 (left = colored_0, right = colored_1, GT = disp_occ / disp_noc):
+    python inference/infer.py --model E0_B --left_dir KITTI2012/training/colored_0 --right_dir KITTI2012/training/colored_1 --gt_dir KITTI2012/training/disp_occ --pattern "*_10.png"
+
+ Any folder of pairs: the left and right images must have the same filenames. --pattern "*" takes every image.
+
+
+-----------------------------------------------------------------------------------------------------
+ 6. ANY CHECKPOINT / ADAPTER NOT IN THE REGISTRY
+-----------------------------------------------------------------------------------------------------
+
+ Full checkpoint (any .pth saved as {"model": state_dict}):
+    python inference/infer.py --ckpt "D:\models\my_model.pth" --left L.png --right R.png
+
+ A LoRA adapter on top of the zero-shot model:
+    python inference/infer.py --adapter inference/models/E3b_lora_gru_adapter.pth --left L.png --right R.png
+
+ A LoRA adapter on top of another checkpoint:
+    python inference/infer.py --ckpt X.pth --adapter Y_adapter.pth --left L.png --right R.png
+
+
+-----------------------------------------------------------------------------------------------------
+ 7. OPTIONS
+-----------------------------------------------------------------------------------------------------
+
+ --out_dir DIR        output folder (default inference/outputs; files with the same name are overwritten)
+ --iters N            GRU refinement iterations (default 32, used for all project metrics; 16 = faster)
+ --scale S            downscale the input by S (0 < S <= 1) before inference to save memory. The disparity is
+                      resized back and divided by S, so it is in full-resolution pixels.
+ --hiera              hierarchical inference for >1K-resolution images (does NOT save memory)
+ --device D           auto (default) | cuda | cuda:0 | cpu
+ --fp32               disable fp16. Without it, a pair that gives NaN in fp16 is rerun in fp32 automatically.
+ --save_pfm           also save the disparity as .pfm
+ --save_png16         also save a KITTI-format 16-bit png (disparity * 256)
+ --focal F --baseline B   also save depth in metres: depth = F * B / disparity (F in px, B in m)
+ --limit N            only the first N pairs
+ --no_vis             do not write colour images / comparison grids
+ --list               list the models and whether their files are found
+ --registry FILE      another models.json
+ --repo_root DIR      FoundationStereo source (default ../FoundationStereo next to inference/)
+ --cfg FILE           cfg.yaml (default: next to the zero-shot checkpoint)
+
+
+-----------------------------------------------------------------------------------------------------
+ 8. OUTPUTS
+-----------------------------------------------------------------------------------------------------
+
+ <out_dir>/<model>/<pair>_disp.npy          float32 disparity in pixels at full input resolution (np.load)
+ <out_dir>/<model>/<pair>_disp.png          colour map (TURBO); range from the GT if given, else 1-99 percentile
+ <out_dir>/<model>/<pair>_vis.png           left image | disparity side by side
+ <out_dir>/<model>/<pair>_depth.png         colour depth map (only with --focal and --baseline)
+ <out_dir>/<model>/<pair>_disp.pfm          only with --save_pfm
+ <out_dir>/<model>/<pair>_disp_kitti.png    only with --save_png16
+ <out_dir>/<model>/<pair>_depth_m.npy       only with --focal and --baseline
+ <out_dir>/comparison/<pair>_compare.png    only when more than one model is run
+ <out_dir>/metrics.csv                      one row per model x pair: seconds, precision, valid_px, epe, d1,
+                                            bp1, bp2, bp3, d1_bad_px, bp2_bad_px
+
+ Metric definitions (same as the project notebooks):
+   EPE  = mean |pred - gt| over valid pixels
+   D1   = % pixels with error > 3 px AND > 5 % of the gt disparity        (KITTI)
+   BP-x = % pixels with error > x px                                       (Middlebury uses BP-2)
+ The printed summary is pixel-weighted over all pairs (= "weighted" / "global" in the notes) plus the mean over images.
+
+
+-----------------------------------------------------------------------------------------------------
+ 9. LOCAL GPU (GTX 1650, 4 GB) - read before running
+-----------------------------------------------------------------------------------------------------
+
+ - FoundationStereo is large (ViT-L backbone + 3D cost volume). 4 GB will probably run out of memory at full
+   KITTI/Middlebury resolution. Try these in order and stop at the first that works:
+       ... --fp32 --scale 0.5
+       ... --fp32 --scale 0.75
+       ... --fp32
+   If you see "GPU out of memory": lower --scale, add --iters 16, or use --device cpu (slow, ~8+ GB RAM).
+ - GTX 16xx cards give NaN in fp16. Pass --fp32 to skip the automatic fp16 attempt.
+ - Loading a model takes a few seconds and up to ~3 GB of system RAM (zero-shot file).
+ - Numbers from --scale < 1 runs are NOT comparable to the project results, which were full resolution, fp16 and
+   on Colab. Use local runs for visual checks; use the Colab notebook for metrics.
+
+ Recommended first local test:
+    python inference/infer.py --model zero_shot --left FoundationStereo/assets/left.png --right FoundationStereo/assets/right.png --fp32 --scale 0.5
+
+
+-----------------------------------------------------------------------------------------------------
+ 10. COLAB INSTEAD
+-----------------------------------------------------------------------------------------------------
+
+ Upload inference/foundationstereo_inference_colab.ipynb and experiments/foundationstereo_source_bundle.zip to Colab.
+ Choose a GPU runtime, edit cell 1 (the lines marked # <<<), then Run all.
+
+
+-----------------------------------------------------------------------------------------------------
+ 11. ERRORS
+-----------------------------------------------------------------------------------------------------
+
+ "unknown model 'X'"                    -> a typo; run --list to see the names and aliases
+ "<model>: checkpoint not found at ..." -> the file is not in inference/models/ (see section 1) or the name differs
+ "FoundationStereo source not found"    -> pass --repo_root "C:\Users\ashuk\Desktop\Computer vision\FoundationStereo"
+ "GPU out of memory"                    -> see section 9
+ "LoRA adapter does not match"          -> the adapter was trained with another code version; use the full checkpoint
+ ModuleNotFoundError (timm, omegaconf, einops ...) -> pip install omegaconf timm einops imageio opencv-python scipy huggingface_hub
+
+
+-----------------------------------------------------------------------------------------------------
+ 12. YOUR OWN PHOTOS (phone): CHECK AND RECTIFY FIRST
+-----------------------------------------------------------------------------------------------------
+
+ FoundationStereo needs a RECTIFIED pair: the same point lies on the same row in both images.
+ Two phone photos never are. Steps:
+
+ 1. Check:
+    python inference/check_rectification.py <left> <right>
+      -> prints the vertical offset of matched points (must be < ~2 px) and writes <left>_rectcheck.png
+
+ 2. Rectify. The photo taken from the LEFT position goes first; the script keeps this order.
+    python inference/rectify_pair.py inference/test_images/<name>/left.jpeg inference/test_images/<name>/right.jpeg
+      -> writes inference/test_images/<name>_rectified/left.png, right.png and rectify_info.txt
+      options: --focal <px> if you know the focal length; --method hartley (projective, no focal needed)
+
+ 3. Run the model on the rectified pair:
+    python inference/infer.py --model zero_shot --left inference/test_images/<name>_rectified/left.png --right inference/test_images/<name>_rectified/right.png --fp32 --out_dir inference/test_images/<name>_rectified
+
+ Limits: the baseline and the camera turn are unknown, so the disparity is RELATIVE (near/far order and shape only).
+   There is no depth in metres.
+
+ How to take a good pair:
+   - Same zoom, landscape or portrait both times, and nothing in the scene moves.
+   - Take the LEFT photo, slide the phone 5-10 cm straight to the right WITHOUT turning or tilting it, then take the
+     RIGHT photo. Resting the phone against a ruler or a table edge helps.
+
+-----------------------------------------------------------------------------------------------------
+13. CLASSICAL BASELINE (OpenCV SGBM, no deep learning) - same metrics as the FoundationStereo runs
+-----------------------------------------------------------------------------------------------------
+ CPU only (no GPU), run from the "Computer vision" folder. Settings are fixed in advance (see the script header).
+ Middlebury = trainingH, 15 scenes, non-occluded, BP-2 / EPE.  KITTI = 2015, Protocol A test split (160 images), D1 / EPE.
+
+ a) Middlebury only (data already on disk, ~1-3 min):
+    python inference/classical_baseline.py --datasets middlebury
+
+ b) Add KITTI 2015 Protocol A (downloads data_scene_flow.zip ~1.7 GB once, extracts only the needed folders):
+    python inference/classical_baseline.py --datasets kitti --download_kitti --delete_zip
+    (the script stops if the split differs from E0: it checks val #1 = 000139 and test #1 = 000129)
+
+ c) Both at once, plus plain block matching for the "step 1" explanation slide:
+    python inference/classical_baseline.py --datasets middlebury,kitti --methods sgbm,bm --download_kitti --delete_zip
+
+ Results: inference/outputs/classical_baseline/<sgbm|bm>/
+    summary.md            table for the slides (SGBM vs FoundationStereo zero-shot / E0 / E1)
+    summary.json          all aggregates (pixel-weighted + per-scene / per-image means), settings, references
+    middlebury_rows.csv   per scene;  kitti_test_rows.csv  per image (all / noc)
+    vis/                  left | ground truth | SGBM | bad pixels (red), every Middlebury scene + first 10 KITTI images
+    disp/                 Middlebury disparity maps (.npy)
+ Re-running one dataset keeps the other dataset's numbers in summary.json.

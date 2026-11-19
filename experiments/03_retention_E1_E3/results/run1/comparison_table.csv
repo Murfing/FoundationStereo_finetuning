@@ -1,0 +1,7 @@
+model,trainable params,best step,KITTI15 test D1-all %,KITTI15 test D1-noc %,KITTI15 test EPE,Middlebury BP-2 %,Middlebury EPE,KITTI D1 vs zero-shot %,Middlebury BP-2 vs zero-shot %
+zero-shot,0,,2.8561,2.7549,0.8545,1.0987,0.3634,0.0,0.0
+E0 full FT (BN drifting),39201418,350.0,1.8623,1.7146,0.7343,2.4225,0.6345,-34.8,120.5
+E1_bn_locked,39201418,1000.0,1.4979,1.3625,0.7145,2.1074,0.6552,-47.6,91.8
+E4_gru_only,16421193,600.0,1.6191,1.4813,0.7234,2.2676,0.7359,-43.3,106.4
+E5a_lora_all,1864584,350.0,1.5747,1.4515,0.7142,2.1765,0.6674,-44.9,98.1
+E5b_lora_gru,670384,950.0,1.5752,1.4428,0.718,2.3446,0.726,-44.8,113.4

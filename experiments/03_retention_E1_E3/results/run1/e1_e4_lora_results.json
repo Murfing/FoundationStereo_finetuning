@@ -1,0 +1,457 @@
+{
+  "protocol": "A",
+  "seed": 2025,
+  "reference": {
+    "zero_shot": {
+      "kitti_val": {
+        "all": {
+          "epe": 0.8745,
+          "d1": 2.7182,
+          "mean_image_d1": 2.7636
+        },
+        "noc": {
+          "epe": 0.8661,
+          "d1": 2.6866,
+          "mean_image_d1": 2.7294
+        }
+      },
+      "kitti_test": {
+        "all": {
+          "epe": 0.8545,
+          "d1": 2.8561,
+          "mean_image_d1": 2.9054
+        },
+        "noc": {
+          "epe": 0.8351,
+          "d1": 2.7549,
+          "mean_image_d1": 2.8204
+        }
+      },
+      "middlebury": {
+        "epe": 0.3634,
+        "bp2": 1.0987
+      }
+    },
+    "E0_full_ft": {
+      "description": "Full fine-tuning (DepthAnything frozen), BatchNorm statistics drifting",
+      "best_step": 350,
+      "kitti_val": {
+        "all": {
+          "epe": 0.7369,
+          "d1": 1.472,
+          "mean_image_d1": 1.4598
+        },
+        "noc": {
+          "epe": 0.7292,
+          "d1": 1.4421,
+          "mean_image_d1": 1.4327
+        }
+      },
+      "kitti_test": {
+        "all": {
+          "epe": 0.7343,
+          "d1": 1.8623,
+          "mean_image_d1": 1.7978
+        },
+        "noc": {
+          "epe": 0.7152,
+          "d1": 1.7146,
+          "mean_image_d1": 1.6744
+        }
+      },
+      "middlebury": {
+        "epe": 0.6345,
+        "bp2": 2.4225
+      }
+    }
+  },
+  "experiments": {
+    "E1_bn_locked": {
+      "description": "Full fine-tuning (DepthAnything frozen), BatchNorm statistics locked",
+      "kind": "full",
+      "lr": 1e-05,
+      "trainable_modules": "all except feature.dino",
+      "lora": null,
+      "batchnorm_locked": true,
+      "trainable_parameters": 39201418,
+      "total_parameters": 374517067,
+      "best_step": 1000,
+      "best_val_d1_noc": 1.3173,
+      "stopped_at_step": 1150,
+      "validation_curve_d1_noc": {
+        "0": 2.6866,
+        "50": 1.7814,
+        "100": 1.6053,
+        "150": 1.5036,
+        "200": 1.4783,
+        "250": 1.4635,
+        "300": 1.4574,
+        "350": 1.452,
+        "400": 1.4209,
+        "450": 1.4203,
+        "500": 1.4598,
+        "550": 1.4302,
+        "600": 1.3954,
+        "650": 1.3799,
+        "700": 1.3363,
+        "750": 1.3496,
+        "800": 1.3424,
+        "850": 1.3191,
+        "900": 1.3204,
+        "950": 1.3236,
+        "1000": 1.3173,
+        "1050": 1.32,
+        "1100": 1.3198,
+        "1150": 1.325
+      },
+      "train_loss_curve": {
+        "50": 0.35554,
+        "100": 0.27077,
+        "150": 0.19173,
+        "200": 0.24958,
+        "250": 0.22326,
+        "300": 0.23054,
+        "350": 0.17325,
+        "400": 0.18932,
+        "450": 0.16161,
+        "500": 0.18742,
+        "550": 0.14597,
+        "600": 0.25245,
+        "650": 0.18299,
+        "700": 0.19341,
+        "750": 0.32143,
+        "800": 0.11846,
+        "850": 0.14166,
+        "900": 0.16554,
+        "950": 0.18217,
+        "1000": 0.20986,
+        "1050": 0.18083,
+        "1100": 0.16836,
+        "1150": 0.19109
+      },
+      "lr_changes": [
+        {
+          "step": 550,
+          "from": 1e-05,
+          "to": 5e-06
+        },
+        {
+          "step": 1150,
+          "from": 5e-06,
+          "to": 2.5e-06
+        }
+      ],
+      "training_minutes": 73.1,
+      "kitti_val": {
+        "all": {
+          "epe": 0.7288,
+          "d1": 1.3419,
+          "mean_image_d1": 1.3427
+        },
+        "noc": {
+          "epe": 0.7214,
+          "d1": 1.3173,
+          "mean_image_d1": 1.3187
+        }
+      },
+      "kitti_test": {
+        "all": {
+          "epe": 0.7145,
+          "d1": 1.4979,
+          "mean_image_d1": 1.5046
+        },
+        "noc": {
+          "epe": 0.6965,
+          "d1": 1.3625,
+          "mean_image_d1": 1.3874
+        }
+      },
+      "middlebury": {
+        "epe": 0.6552,
+        "bp2": 2.1074,
+        "mean_scene_bp2": 2.2387
+      },
+      "total_minutes": 87.1
+    },
+    "E4_gru_only": {
+      "description": "Only GRU update block + upsampler trained, BatchNorm locked",
+      "kind": "full",
+      "lr": 1e-05,
+      "trainable_modules": [
+        "update_block",
+        "spx_2_gru",
+        "spx_gru",
+        "stem_2"
+      ],
+      "lora": null,
+      "batchnorm_locked": true,
+      "trainable_parameters": 16421193,
+      "total_parameters": 374517067,
+      "best_step": 600,
+      "best_val_d1_noc": 1.4524,
+      "stopped_at_step": 750,
+      "validation_curve_d1_noc": {
+        "0": 2.687,
+        "50": 2.098,
+        "100": 1.8266,
+        "150": 1.6814,
+        "200": 1.6093,
+        "250": 1.5782,
+        "300": 1.5554,
+        "350": 1.5417,
+        "400": 1.5342,
+        "450": 1.4954,
+        "500": 1.5082,
+        "550": 1.4717,
+        "600": 1.4524,
+        "650": 1.4618,
+        "700": 1.4693,
+        "750": 1.4704
+      },
+      "train_loss_curve": {
+        "50": 0.35355,
+        "100": 0.30782,
+        "150": 0.20953,
+        "200": 0.26306,
+        "250": 0.24791,
+        "300": 0.24729,
+        "350": 0.183,
+        "400": 0.21347,
+        "450": 0.17834,
+        "500": 0.20221,
+        "550": 0.15592,
+        "600": 0.27755,
+        "650": 0.18339,
+        "700": 0.20313,
+        "750": 0.30473
+      },
+      "lr_changes": [
+        {
+          "step": 750,
+          "from": 1e-05,
+          "to": 5e-06
+        }
+      ],
+      "training_minutes": 40.5,
+      "kitti_val": {
+        "all": {
+          "epe": 0.7396,
+          "d1": 1.484,
+          "mean_image_d1": 1.4769
+        },
+        "noc": {
+          "epe": 0.7318,
+          "d1": 1.4524,
+          "mean_image_d1": 1.4462
+        }
+      },
+      "kitti_test": {
+        "all": {
+          "epe": 0.7234,
+          "d1": 1.6191,
+          "mean_image_d1": 1.6208
+        },
+        "noc": {
+          "epe": 0.7051,
+          "d1": 1.4813,
+          "mean_image_d1": 1.5041
+        }
+      },
+      "middlebury": {
+        "epe": 0.7359,
+        "bp2": 2.2676,
+        "mean_scene_bp2": 2.4039
+      },
+      "total_minutes": 55.0
+    },
+    "E5a_lora_all": {
+      "description": "LoRA r=8 on all conv/linear layers outside DepthAnything, BatchNorm locked",
+      "kind": "lora",
+      "lr": 0.0001,
+      "trainable_modules": "all except feature.dino",
+      "lora": {
+        "rank": 8,
+        "alpha": 16,
+        "layers": 217
+      },
+      "batchnorm_locked": true,
+      "trainable_parameters": 1864584,
+      "total_parameters": 376381651,
+      "best_step": 350,
+      "best_val_d1_noc": 1.3804,
+      "stopped_at_step": 500,
+      "validation_curve_d1_noc": {
+        "0": 2.687,
+        "50": 1.9359,
+        "100": 1.6314,
+        "150": 1.5022,
+        "200": 1.4527,
+        "250": 1.4227,
+        "300": 1.4127,
+        "350": 1.3804,
+        "400": 1.3984,
+        "450": 1.4065,
+        "500": 1.4287
+      },
+      "train_loss_curve": {
+        "50": 0.35105,
+        "100": 0.28357,
+        "150": 0.19765,
+        "200": 0.25729,
+        "250": 0.23058,
+        "300": 0.24109,
+        "350": 0.17948,
+        "400": 0.19498,
+        "450": 0.16249,
+        "500": 0.19257
+      },
+      "lr_changes": [
+        {
+          "step": 500,
+          "from": 0.0001,
+          "to": 5e-05
+        }
+      ],
+      "training_minutes": 40.3,
+      "kitti_val": {
+        "all": {
+          "epe": 0.728,
+          "d1": 1.4122,
+          "mean_image_d1": 1.4095
+        },
+        "noc": {
+          "epe": 0.7203,
+          "d1": 1.3818,
+          "mean_image_d1": 1.3806
+        }
+      },
+      "kitti_test": {
+        "all": {
+          "epe": 0.7142,
+          "d1": 1.5747,
+          "mean_image_d1": 1.5844
+        },
+        "noc": {
+          "epe": 0.6962,
+          "d1": 1.4515,
+          "mean_image_d1": 1.4773
+        }
+      },
+      "middlebury": {
+        "epe": 0.6674,
+        "bp2": 2.1765,
+        "mean_scene_bp2": 2.3104
+      },
+      "total_minutes": 55.5
+    },
+    "E5b_lora_gru": {
+      "description": "LoRA r=8 on GRU update block + upsampler, BatchNorm locked",
+      "kind": "lora",
+      "lr": 0.0001,
+      "trainable_modules": [
+        "update_block",
+        "spx_2_gru",
+        "spx_gru",
+        "stem_2"
+      ],
+      "lora": {
+        "rank": 8,
+        "alpha": 16,
+        "layers": 40
+      },
+      "batchnorm_locked": true,
+      "trainable_parameters": 670384,
+      "total_parameters": 375187451,
+      "best_step": 950,
+      "best_val_d1_noc": 1.418,
+      "stopped_at_step": 1100,
+      "validation_curve_d1_noc": {
+        "0": 2.687,
+        "50": 2.2555,
+        "100": 1.8558,
+        "150": 1.6715,
+        "200": 1.5683,
+        "250": 1.5509,
+        "300": 1.5634,
+        "350": 1.5226,
+        "400": 1.5142,
+        "450": 1.5066,
+        "500": 1.5187,
+        "550": 1.4618,
+        "600": 1.4539,
+        "650": 1.4429,
+        "700": 1.47,
+        "750": 1.4585,
+        "800": 1.437,
+        "850": 1.4257,
+        "900": 1.4696,
+        "950": 1.418,
+        "1000": 1.422,
+        "1050": 1.4741,
+        "1100": 1.4743
+      },
+      "train_loss_curve": {
+        "50": 0.37606,
+        "100": 0.31849,
+        "150": 0.20827,
+        "200": 0.26786,
+        "250": 0.24124,
+        "300": 0.24914,
+        "350": 0.18557,
+        "400": 0.21597,
+        "450": 0.17788,
+        "500": 0.20187,
+        "550": 0.15635,
+        "600": 0.26481,
+        "650": 0.18483,
+        "700": 0.20684,
+        "750": 0.30358,
+        "800": 0.13167,
+        "850": 0.15422,
+        "900": 0.18127,
+        "950": 0.19627,
+        "1000": 0.22518,
+        "1050": 0.19025,
+        "1100": 0.19083
+      },
+      "lr_changes": [
+        {
+          "step": 1100,
+          "from": 0.0001,
+          "to": 5e-05
+        }
+      ],
+      "training_minutes": 69.2,
+      "kitti_val": {
+        "all": {
+          "epe": 0.7363,
+          "d1": 1.4397,
+          "mean_image_d1": 1.4293
+        },
+        "noc": {
+          "epe": 0.7291,
+          "d1": 1.4177,
+          "mean_image_d1": 1.4072
+        }
+      },
+      "kitti_test": {
+        "all": {
+          "epe": 0.718,
+          "d1": 1.5752,
+          "mean_image_d1": 1.5882
+        },
+        "noc": {
+          "epe": 0.6999,
+          "d1": 1.4428,
+          "mean_image_d1": 1.4749
+        }
+      },
+      "middlebury": {
+        "epe": 0.726,
+        "bp2": 2.3446,
+        "mean_scene_bp2": 2.5048
+      },
+      "total_minutes": 84.2
+    }
+  }
+}

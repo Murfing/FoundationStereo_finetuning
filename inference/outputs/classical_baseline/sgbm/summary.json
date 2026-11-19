@@ -1,0 +1,92 @@
+{
+  "middlebury": {
+    "epe": 5.642,
+    "bp2": 23.5551,
+    "mean_scene_bp2": 23.0047,
+    "mean_density": 70.22,
+    "valid_pixels": 16152910
+  },
+  "settings": {
+    "method": "sgbm",
+    "opencv": "4.11.0",
+    "sgbm": "blockSize 5, P1 8*3*25, P2 32*3*25, uniqueness 10, speckle 100/2, disp12MaxDiff 1, preFilterCap 63, MODE_SGBM",
+    "bm": "grayscale, blockSize 15, uniqueness 10, speckle 100/2, disp12MaxDiff 1",
+    "num_disparities": "Middlebury: calib.txt ndisp rounded up to x16; KITTI: 256",
+    "holes": "filled by background interpolation (KITTI devkit rule); density = % pixels matched before filling",
+    "middlebury": "trainingH, 15 scenes, mask0nocc == 255, pixel-weighted",
+    "kitti": "KITTI 2015 Protocol A test (160), rng 2025, disp_occ = all, disp_noc = noc"
+  },
+  "reference_foundationstereo": {
+    "FoundationStereo zero-shot": {
+      "middlebury": {
+        "epe": 0.3634,
+        "bp2": 1.0987,
+        "mean_scene_bp2": 1.1475
+      },
+      "kitti_test": {
+        "all": {
+          "epe": 0.8545,
+          "d1": 2.8561,
+          "mean_image_d1": 2.9054
+        },
+        "noc": {
+          "epe": 0.8351,
+          "d1": 2.7549,
+          "mean_image_d1": 2.8204
+        }
+      }
+    },
+    "E0 full fine-tune (Protocol A)": {
+      "middlebury": {
+        "epe": 0.6345,
+        "bp2": 2.4225,
+        "mean_scene_bp2": null
+      },
+      "kitti_test": {
+        "all": {
+          "epe": 0.7343,
+          "d1": 1.8623,
+          "mean_image_d1": 1.7978
+        },
+        "noc": {
+          "epe": 0.7152,
+          "d1": 1.7146,
+          "mean_image_d1": 1.6744
+        }
+      }
+    },
+    "E1 BN locked (Protocol A)": {
+      "middlebury": {
+        "epe": 0.6552,
+        "bp2": 2.1074,
+        "mean_scene_bp2": 2.2387
+      },
+      "kitti_test": {
+        "all": {
+          "epe": 0.7145,
+          "d1": 1.4979,
+          "mean_image_d1": null
+        },
+        "noc": {
+          "epe": null,
+          "d1": 1.3625,
+          "mean_image_d1": null
+        }
+      }
+    }
+  },
+  "kitti_test": {
+    "all": {
+      "epe": 2.867,
+      "d1": 18.0544,
+      "mean_image_d1": 17.587
+    },
+    "noc": {
+      "epe": 2.6865,
+      "d1": 17.077,
+      "mean_image_d1": 16.7355
+    },
+    "images": 160,
+    "mean_density": 65.09
+  }
+}

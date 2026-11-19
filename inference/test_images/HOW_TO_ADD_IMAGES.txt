@@ -1,0 +1,37 @@
+One sub-folder = one stereo pair. The results are saved in that same sub-folder.
+
+  test_images/
+    my_scene/                 <- any folder name; it is used as the pair name
+      left.png                REQUIRED  left camera image   (im0.png also works)
+      right.png               REQUIRED  right camera image  (im1.png also works)
+      K.txt                   optional  camera calibration -> adds a depth map in metres
+      gt.png / gt.pfm         optional  ground-truth disparity -> adds EPE / D1 / BP-2
+                                        (.png = KITTI 16-bit, value/256; .pfm = Middlebury)
+      mask0nocc.png           optional  evaluate only pixels == 255 (Middlebury non-occluded)
+
+The two images must be a RECTIFIED stereo pair: two cameras side by side, taken at the same moment. A point in the
+scene must lie on the same row in both images. Left must be the left camera.
+
+K.txt format (same as FoundationStereo/assets/K.txt):
+  line 1: the 3x3 intrinsic matrix as 9 numbers   fx 0 cx 0 fy cy 0 0 1
+  line 2: baseline in metres
+  Depth = fx * baseline / disparity. Use fx for the image size you put in the folder.
+
+Run (from the "Computer vision" folder):
+  python inference/infer.py --model zero_shot --test_images --fp32 --scale 0.5
+  python inference/infer.py --model zero_shot,E0_B,E3a,E3b --test_images --fp32 --scale 0.5
+
+Files written into each pair folder (<model> = zero_shot, E0_B, E3a, ...):
+  <model>_disp.png      colour disparity map (TURBO: red/yellow = near, blue = far)
+  <model>_vis.png       left image | disparity side by side (like the official README image)
+  <model>_disp.npy      raw disparity in pixels (float32)
+  <model>_depth.png     colour depth map (only with K.txt; red = near, blue = far)
+  <model>_depth_m.npy   depth in metres (only with K.txt)
+  comparison.png        left | GT | each model stacked (only when you run more than one model)
+metrics.csv (all pairs and models) is written to the test_images folder itself.
+Running again overwrites the files of the same model.
+
+Included examples:
+  demo_foundationstereo   the official demo pair + K.txt   -> disparity + depth
+  middlebury_Adirondack   Middlebury trainingH (half res) + GT + mask -> disparity + metrics (no K.txt:
+                          Middlebury depth also needs a disparity offset "doffs", so no depth here)

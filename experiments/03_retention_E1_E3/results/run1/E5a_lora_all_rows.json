@@ -1,0 +1,3713 @@
+{
+ "kitti_val": [
+  {
+   "dataset": "kitti2015",
+   "index": "000139",
+   "mask": "all",
+   "valid_pixels": 94446,
+   "epe": 0.5178739428520203,
+   "bad_pixels": 698,
+   "d1": 0.7390466509963365
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000139",
+   "mask": "noc",
+   "valid_pixels": 93128,
+   "epe": 0.5156695246696472,
+   "bad_pixels": 697,
+   "d1": 0.7484322652693067
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000160",
+   "mask": "all",
+   "valid_pixels": 101489,
+   "epe": 0.6872612237930298,
+   "bad_pixels": 2460,
+   "d1": 2.423908009735045
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000160",
+   "mask": "noc",
+   "valid_pixels": 99995,
+   "epe": 0.671449601650238,
+   "bad_pixels": 2270,
+   "d1": 2.270113505675284
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000178",
+   "mask": "all",
+   "valid_pixels": 99665,
+   "epe": 0.6511054039001465,
+   "bad_pixels": 1009,
+   "d1": 1.0123915115637385
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000178",
+   "mask": "noc",
+   "valid_pixels": 98248,
+   "epe": 0.6510608792304993,
+   "bad_pixels": 1009,
+   "d1": 1.0269929158863285
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000181",
+   "mask": "all",
+   "valid_pixels": 74854,
+   "epe": 0.6302154064178467,
+   "bad_pixels": 994,
+   "d1": 1.327918347716889
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000181",
+   "mask": "noc",
+   "valid_pixels": 73660,
+   "epe": 0.6220085620880127,
+   "bad_pixels": 961,
+   "d1": 1.3046429541134945
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000018",
+   "mask": "all",
+   "valid_pixels": 97904,
+   "epe": 1.6133179664611816,
+   "bad_pixels": 4953,
+   "d1": 5.059037424415754
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000018",
+   "mask": "noc",
+   "valid_pixels": 96470,
+   "epe": 1.6244540214538574,
+   "bad_pixels": 4945,
+   "d1": 5.125945889913963
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000034",
+   "mask": "all",
+   "valid_pixels": 75848,
+   "epe": 0.7215931415557861,
+   "bad_pixels": 1078,
+   "d1": 1.4212635797911612
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000034",
+   "mask": "noc",
+   "valid_pixels": 74766,
+   "epe": 0.7125217914581299,
+   "bad_pixels": 1010,
+   "d1": 1.3508814166867293
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000032",
+   "mask": "all",
+   "valid_pixels": 55719,
+   "epe": 0.7827484607696533,
+   "bad_pixels": 1063,
+   "d1": 1.9077872897934278
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000032",
+   "mask": "noc",
+   "valid_pixels": 54115,
+   "epe": 0.7605123519897461,
+   "bad_pixels": 999,
+   "d1": 1.846068557701192
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000118",
+   "mask": "all",
+   "valid_pixels": 73409,
+   "epe": 0.7736366987228394,
+   "bad_pixels": 1041,
+   "d1": 1.4180822514950482
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000118",
+   "mask": "noc",
+   "valid_pixels": 72042,
+   "epe": 0.7631362676620483,
+   "bad_pixels": 1012,
+   "d1": 1.4047361261486355
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000169",
+   "mask": "all",
+   "valid_pixels": 54578,
+   "epe": 0.9137852191925049,
+   "bad_pixels": 736,
+   "d1": 1.348528711202316
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000169",
+   "mask": "noc",
+   "valid_pixels": 53856,
+   "epe": 0.9183106422424316,
+   "bad_pixels": 734,
+   "d1": 1.362893642305407
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000044",
+   "mask": "all",
+   "valid_pixels": 53363,
+   "epe": 0.5612440705299377,
+   "bad_pixels": 428,
+   "d1": 0.8020538575417424
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000044",
+   "mask": "noc",
+   "valid_pixels": 52662,
+   "epe": 0.5570789575576782,
+   "bad_pixels": 428,
+   "d1": 0.8127302419201701
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000023",
+   "mask": "all",
+   "valid_pixels": 116241,
+   "epe": 0.8934341073036194,
+   "bad_pixels": 2303,
+   "d1": 1.9812286542614053
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000023",
+   "mask": "noc",
+   "valid_pixels": 114716,
+   "epe": 0.8905196189880371,
+   "bad_pixels": 2233,
+   "d1": 1.9465462533561142
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000128",
+   "mask": "all",
+   "valid_pixels": 117697,
+   "epe": 0.49138951301574707,
+   "bad_pixels": 444,
+   "d1": 0.3772398616787174
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000128",
+   "mask": "noc",
+   "valid_pixels": 114920,
+   "epe": 0.4770249128341675,
+   "bad_pixels": 439,
+   "d1": 0.3820048729550992
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000132",
+   "mask": "all",
+   "valid_pixels": 74321,
+   "epe": 0.6636390686035156,
+   "bad_pixels": 922,
+   "d1": 1.240564577979306
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000132",
+   "mask": "noc",
+   "valid_pixels": 73143,
+   "epe": 0.6530360579490662,
+   "bad_pixels": 873,
+   "d1": 1.193552356343054
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000075",
+   "mask": "all",
+   "valid_pixels": 80072,
+   "epe": 0.6394312381744385,
+   "bad_pixels": 320,
+   "d1": 0.3996403237086622
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000075",
+   "mask": "noc",
+   "valid_pixels": 79173,
+   "epe": 0.6367749571800232,
+   "bad_pixels": 320,
+   "d1": 0.4041781920604246
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000134",
+   "mask": "all",
+   "valid_pixels": 114514,
+   "epe": 0.6303263306617737,
+   "bad_pixels": 729,
+   "d1": 0.6366033847389839
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000134",
+   "mask": "noc",
+   "valid_pixels": 112803,
+   "epe": 0.6238018274307251,
+   "bad_pixels": 712,
+   "d1": 0.631188886820386
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000176",
+   "mask": "all",
+   "valid_pixels": 95363,
+   "epe": 0.6884158849716187,
+   "bad_pixels": 1101,
+   "d1": 1.154535826263855
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000176",
+   "mask": "noc",
+   "valid_pixels": 93996,
+   "epe": 0.6757818460464478,
+   "bad_pixels": 968,
+   "d1": 1.029831056640708
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000053",
+   "mask": "all",
+   "valid_pixels": 55073,
+   "epe": 0.5580853223800659,
+   "bad_pixels": 420,
+   "d1": 0.7626241533964012
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000053",
+   "mask": "noc",
+   "valid_pixels": 54367,
+   "epe": 0.5541414618492126,
+   "bad_pixels": 420,
+   "d1": 0.7725274523148233
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000048",
+   "mask": "all",
+   "valid_pixels": 63308,
+   "epe": 0.655034065246582,
+   "bad_pixels": 769,
+   "d1": 1.2146964048777404
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000048",
+   "mask": "noc",
+   "valid_pixels": 62594,
+   "epe": 0.6533307433128357,
+   "bad_pixels": 769,
+   "d1": 1.228552257404863
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000145",
+   "mask": "all",
+   "valid_pixels": 97621,
+   "epe": 0.9013251066207886,
+   "bad_pixels": 1199,
+   "d1": 1.2282193380522632
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000145",
+   "mask": "noc",
+   "valid_pixels": 96809,
+   "epe": 0.9022158980369568,
+   "bad_pixels": 1182,
+   "d1": 1.220960861076966
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000014",
+   "mask": "all",
+   "valid_pixels": 95208,
+   "epe": 0.4652925133705139,
+   "bad_pixels": 495,
+   "d1": 0.5199142929165617
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000014",
+   "mask": "noc",
+   "valid_pixels": 93727,
+   "epe": 0.44975441694259644,
+   "bad_pixels": 434,
+   "d1": 0.4630469341811858
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000097",
+   "mask": "all",
+   "valid_pixels": 51397,
+   "epe": 0.466686874628067,
+   "bad_pixels": 296,
+   "d1": 0.5759090997529038
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000097",
+   "mask": "noc",
+   "valid_pixels": 49532,
+   "epe": 0.46165838837623596,
+   "bad_pixels": 282,
+   "d1": 0.569328918678834
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000112",
+   "mask": "all",
+   "valid_pixels": 59233,
+   "epe": 0.6911808848381042,
+   "bad_pixels": 830,
+   "d1": 1.4012459271014468
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000112",
+   "mask": "noc",
+   "valid_pixels": 58479,
+   "epe": 0.6858744025230408,
+   "bad_pixels": 799,
+   "d1": 1.3663024333521436
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000151",
+   "mask": "all",
+   "valid_pixels": 80309,
+   "epe": 0.5389711856842041,
+   "bad_pixels": 331,
+   "d1": 0.4121580395721526
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000151",
+   "mask": "noc",
+   "valid_pixels": 79031,
+   "epe": 0.5300289392471313,
+   "bad_pixels": 317,
+   "d1": 0.4011084258075945
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000121",
+   "mask": "all",
+   "valid_pixels": 107094,
+   "epe": 0.592461109161377,
+   "bad_pixels": 463,
+   "d1": 0.43233047603040314
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000121",
+   "mask": "noc",
+   "valid_pixels": 105561,
+   "epe": 0.5860912799835205,
+   "bad_pixels": 444,
+   "d1": 0.4206098843322818
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000089",
+   "mask": "all",
+   "valid_pixels": 82160,
+   "epe": 0.5109627842903137,
+   "bad_pixels": 604,
+   "d1": 0.7351509250243428
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000089",
+   "mask": "noc",
+   "valid_pixels": 79885,
+   "epe": 0.5083307027816772,
+   "bad_pixels": 577,
+   "d1": 0.7222882894160356
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000165",
+   "mask": "all",
+   "valid_pixels": 103000,
+   "epe": 0.5204030871391296,
+   "bad_pixels": 883,
+   "d1": 0.8572815533980583
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000165",
+   "mask": "noc",
+   "valid_pixels": 98433,
+   "epe": 0.525941014289856,
+   "bad_pixels": 883,
+   "d1": 0.8970568813304481
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000072",
+   "mask": "all",
+   "valid_pixels": 78828,
+   "epe": 0.7821649312973022,
+   "bad_pixels": 1502,
+   "d1": 1.9054143197848479
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000072",
+   "mask": "noc",
+   "valid_pixels": 77659,
+   "epe": 0.7804265022277832,
+   "bad_pixels": 1497,
+   "d1": 1.9276580950050863
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000000",
+   "mask": "all",
+   "valid_pixels": 88975,
+   "epe": 0.5616374015808105,
+   "bad_pixels": 785,
+   "d1": 0.882270300646249
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000000",
+   "mask": "noc",
+   "valid_pixels": 87712,
+   "epe": 0.5512194633483887,
+   "bad_pixels": 682,
+   "d1": 0.7775446917183509
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000058",
+   "mask": "all",
+   "valid_pixels": 121083,
+   "epe": 1.5665584802627563,
+   "bad_pixels": 4638,
+   "d1": 3.830430365947325
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000058",
+   "mask": "noc",
+   "valid_pixels": 117319,
+   "epe": 1.5052742958068848,
+   "bad_pixels": 4354,
+   "d1": 3.7112488173271165
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000146",
+   "mask": "all",
+   "valid_pixels": 91270,
+   "epe": 0.8132930397987366,
+   "bad_pixels": 1468,
+   "d1": 1.6084145940615757
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000146",
+   "mask": "noc",
+   "valid_pixels": 90211,
+   "epe": 0.8074592351913452,
+   "bad_pixels": 1356,
+   "d1": 1.5031426322732262
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000078",
+   "mask": "all",
+   "valid_pixels": 107598,
+   "epe": 0.7368452548980713,
+   "bad_pixels": 920,
+   "d1": 0.8550344801947992
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000078",
+   "mask": "noc",
+   "valid_pixels": 106350,
+   "epe": 0.7318532466888428,
+   "bad_pixels": 866,
+   "d1": 0.8142924306535025
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000192",
+   "mask": "all",
+   "valid_pixels": 114081,
+   "epe": 0.5472992658615112,
+   "bad_pixels": 1139,
+   "d1": 0.9984134080171106
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000192",
+   "mask": "noc",
+   "valid_pixels": 111773,
+   "epe": 0.5273612141609192,
+   "bad_pixels": 965,
+   "d1": 0.8633569824555124
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000113",
+   "mask": "all",
+   "valid_pixels": 50493,
+   "epe": 0.9015106558799744,
+   "bad_pixels": 759,
+   "d1": 1.503178658427901
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000113",
+   "mask": "noc",
+   "valid_pixels": 50013,
+   "epe": 0.9011648893356323,
+   "bad_pixels": 755,
+   "d1": 1.509607502049467
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000022",
+   "mask": "all",
+   "valid_pixels": 115422,
+   "epe": 0.8415845632553101,
+   "bad_pixels": 1184,
+   "d1": 1.0258009738178162
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000022",
+   "mask": "noc",
+   "valid_pixels": 114031,
+   "epe": 0.8395406007766724,
+   "bad_pixels": 1183,
+   "d1": 1.0374371881330515
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000068",
+   "mask": "all",
+   "valid_pixels": 66721,
+   "epe": 1.036061406135559,
+   "bad_pixels": 3922,
+   "d1": 5.878209259453546
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000068",
+   "mask": "noc",
+   "valid_pixels": 65750,
+   "epe": 1.0215556621551514,
+   "bad_pixels": 3710,
+   "d1": 5.642585551330798
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000123",
+   "mask": "all",
+   "valid_pixels": 102152,
+   "epe": 0.5923160910606384,
+   "bad_pixels": 1019,
+   "d1": 0.9975330879473726
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000123",
+   "mask": "noc",
+   "valid_pixels": 100622,
+   "epe": 0.5885992050170898,
+   "bad_pixels": 1011,
+   "d1": 1.0047504521873944
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000035",
+   "mask": "all",
+   "valid_pixels": 74943,
+   "epe": 0.7273832559585571,
+   "bad_pixels": 1553,
+   "d1": 2.072241570260064
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000035",
+   "mask": "noc",
+   "valid_pixels": 73939,
+   "epe": 0.7271990180015564,
+   "bad_pixels": 1548,
+   "d1": 2.0936177118976453
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000096",
+   "mask": "all",
+   "valid_pixels": 83628,
+   "epe": 0.5799896717071533,
+   "bad_pixels": 490,
+   "d1": 0.5859281580331946
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000096",
+   "mask": "noc",
+   "valid_pixels": 81602,
+   "epe": 0.5661784410476685,
+   "bad_pixels": 467,
+   "d1": 0.5722898948555183
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000138",
+   "mask": "all",
+   "valid_pixels": 74503,
+   "epe": 0.519296407699585,
+   "bad_pixels": 515,
+   "d1": 0.6912473323221884
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000138",
+   "mask": "noc",
+   "valid_pixels": 73514,
+   "epe": 0.5152523517608643,
+   "bad_pixels": 515,
+   "d1": 0.7005468346165356
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000163",
+   "mask": "all",
+   "valid_pixels": 101724,
+   "epe": 0.8022860288619995,
+   "bad_pixels": 2192,
+   "d1": 2.1548503794581415
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000163",
+   "mask": "noc",
+   "valid_pixels": 100542,
+   "epe": 0.8049958348274231,
+   "bad_pixels": 2177,
+   "d1": 2.1652642676692326
+  }
+ ],
+ "kitti_test": [
+  {
+   "dataset": "kitti2015",
+   "index": "000129",
+   "mask": "all",
+   "valid_pixels": 83778,
+   "epe": 0.6120150685310364,
+   "bad_pixels": 879,
+   "d1": 1.0492014610040823
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000129",
+   "mask": "noc",
+   "valid_pixels": 82462,
+   "epe": 0.6073344945907593,
+   "bad_pixels": 826,
+   "d1": 1.0016734980960929
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000041",
+   "mask": "all",
+   "valid_pixels": 92896,
+   "epe": 0.7846124768257141,
+   "bad_pixels": 1965,
+   "d1": 2.1152686875645883
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000041",
+   "mask": "noc",
+   "valid_pixels": 91388,
+   "epe": 0.7803990840911865,
+   "bad_pixels": 1908,
+   "d1": 2.0878014618987173
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000170",
+   "mask": "all",
+   "valid_pixels": 90711,
+   "epe": 0.8546761870384216,
+   "bad_pixels": 436,
+   "d1": 0.4806473305332319
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000170",
+   "mask": "noc",
+   "valid_pixels": 89506,
+   "epe": 0.8555020689964294,
+   "bad_pixels": 436,
+   "d1": 0.48711818202131707
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000015",
+   "mask": "all",
+   "valid_pixels": 91512,
+   "epe": 0.474542498588562,
+   "bad_pixels": 433,
+   "d1": 0.473161989684413
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000015",
+   "mask": "noc",
+   "valid_pixels": 89943,
+   "epe": 0.4637105166912079,
+   "bad_pixels": 390,
+   "d1": 0.4336079517027451
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000105",
+   "mask": "all",
+   "valid_pixels": 102901,
+   "epe": 0.719601571559906,
+   "bad_pixels": 1470,
+   "d1": 1.4285575456020836
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000105",
+   "mask": "noc",
+   "valid_pixels": 101589,
+   "epe": 0.7177333235740662,
+   "bad_pixels": 1416,
+   "d1": 1.3938516965419483
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000166",
+   "mask": "all",
+   "valid_pixels": 111600,
+   "epe": 0.3630029559135437,
+   "bad_pixels": 491,
+   "d1": 0.4399641577060932
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000166",
+   "mask": "noc",
+   "valid_pixels": 108913,
+   "epe": 0.36134272813796997,
+   "bad_pixels": 491,
+   "d1": 0.45081854324093545
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000193",
+   "mask": "all",
+   "valid_pixels": 123266,
+   "epe": 1.2361568212509155,
+   "bad_pixels": 4685,
+   "d1": 3.8007236383106457
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000193",
+   "mask": "noc",
+   "valid_pixels": 116217,
+   "epe": 1.0265679359436035,
+   "bad_pixels": 2235,
+   "d1": 1.9231265649603757
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000103",
+   "mask": "all",
+   "valid_pixels": 122238,
+   "epe": 0.5034058094024658,
+   "bad_pixels": 611,
+   "d1": 0.49984456551972384
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000103",
+   "mask": "noc",
+   "valid_pixels": 120560,
+   "epe": 0.49134424328804016,
+   "bad_pixels": 528,
+   "d1": 0.43795620437956206
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000148",
+   "mask": "all",
+   "valid_pixels": 82076,
+   "epe": 0.6149305701255798,
+   "bad_pixels": 849,
+   "d1": 1.034407134850626
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000148",
+   "mask": "noc",
+   "valid_pixels": 81031,
+   "epe": 0.6080226302146912,
+   "bad_pixels": 740,
+   "d1": 0.9132307388530315
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000008",
+   "mask": "all",
+   "valid_pixels": 101836,
+   "epe": 0.5836853384971619,
+   "bad_pixels": 924,
+   "d1": 0.9073412152873247
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000008",
+   "mask": "noc",
+   "valid_pixels": 101620,
+   "epe": 0.5603333711624146,
+   "bad_pixels": 723,
+   "d1": 0.7114741192678606
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000093",
+   "mask": "all",
+   "valid_pixels": 103492,
+   "epe": 1.036864995956421,
+   "bad_pixels": 1707,
+   "d1": 1.6494028523943878
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000093",
+   "mask": "noc",
+   "valid_pixels": 98233,
+   "epe": 0.9383686184883118,
+   "bad_pixels": 1455,
+   "d1": 1.4811723148025613
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000196",
+   "mask": "all",
+   "valid_pixels": 124753,
+   "epe": 0.6358522176742554,
+   "bad_pixels": 1046,
+   "d1": 0.8384567906182617
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000196",
+   "mask": "noc",
+   "valid_pixels": 121795,
+   "epe": 0.637259840965271,
+   "bad_pixels": 1008,
+   "d1": 0.8276201814524405
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000117",
+   "mask": "all",
+   "valid_pixels": 97908,
+   "epe": 0.49737033247947693,
+   "bad_pixels": 427,
+   "d1": 0.43612370797074806
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000117",
+   "mask": "noc",
+   "valid_pixels": 96765,
+   "epe": 0.49218136072158813,
+   "bad_pixels": 427,
+   "d1": 0.4412752544825092
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000013",
+   "mask": "all",
+   "valid_pixels": 88640,
+   "epe": 0.5117906928062439,
+   "bad_pixels": 743,
+   "d1": 0.8382220216606497
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000013",
+   "mask": "noc",
+   "valid_pixels": 87020,
+   "epe": 0.5029078125953674,
+   "bad_pixels": 706,
+   "d1": 0.8113077453458974
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000095",
+   "mask": "all",
+   "valid_pixels": 103928,
+   "epe": 0.8857091665267944,
+   "bad_pixels": 1185,
+   "d1": 1.1402124547763837
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000095",
+   "mask": "noc",
+   "valid_pixels": 96655,
+   "epe": 0.8595585823059082,
+   "bad_pixels": 1170,
+   "d1": 1.21049092131809
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000067",
+   "mask": "all",
+   "valid_pixels": 66733,
+   "epe": 1.1588979959487915,
+   "bad_pixels": 3976,
+   "d1": 5.958071718639953
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000067",
+   "mask": "noc",
+   "valid_pixels": 65713,
+   "epe": 1.1497037410736084,
+   "bad_pixels": 3850,
+   "d1": 5.858810281070716
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000039",
+   "mask": "all",
+   "valid_pixels": 89633,
+   "epe": 0.7180748581886292,
+   "bad_pixels": 1292,
+   "d1": 1.4414334006448517
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000039",
+   "mask": "noc",
+   "valid_pixels": 88172,
+   "epe": 0.7141098380088806,
+   "bad_pixels": 1269,
+   "d1": 1.439232409381663
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000021",
+   "mask": "all",
+   "valid_pixels": 98058,
+   "epe": 1.1880377531051636,
+   "bad_pixels": 5150,
+   "d1": 5.2519937180036305
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000021",
+   "mask": "noc",
+   "valid_pixels": 96343,
+   "epe": 1.1987940073013306,
+   "bad_pixels": 5140,
+   "d1": 5.335104781873099
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000038",
+   "mask": "all",
+   "valid_pixels": 94439,
+   "epe": 0.8011432886123657,
+   "bad_pixels": 1173,
+   "d1": 1.2420716017746904
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000038",
+   "mask": "noc",
+   "valid_pixels": 93014,
+   "epe": 0.794619619846344,
+   "bad_pixels": 1136,
+   "d1": 1.2213215214913884
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000127",
+   "mask": "all",
+   "valid_pixels": 113267,
+   "epe": 0.643686830997467,
+   "bad_pixels": 877,
+   "d1": 0.7742767090149822
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000127",
+   "mask": "noc",
+   "valid_pixels": 111892,
+   "epe": 0.6278045177459717,
+   "bad_pixels": 725,
+   "d1": 0.647946233868373
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000189",
+   "mask": "all",
+   "valid_pixels": 130093,
+   "epe": 0.6656597256660461,
+   "bad_pixels": 1546,
+   "d1": 1.1883806200179872
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000189",
+   "mask": "noc",
+   "valid_pixels": 122759,
+   "epe": 0.6456963419914246,
+   "bad_pixels": 1276,
+   "d1": 1.0394349905098608
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000111",
+   "mask": "all",
+   "valid_pixels": 108758,
+   "epe": 0.7644965052604675,
+   "bad_pixels": 1893,
+   "d1": 1.740561613858291
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000111",
+   "mask": "noc",
+   "valid_pixels": 106984,
+   "epe": 0.7605397701263428,
+   "bad_pixels": 1891,
+   "d1": 1.7675540267703582
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000091",
+   "mask": "all",
+   "valid_pixels": 110428,
+   "epe": 1.7351748943328857,
+   "bad_pixels": 21294,
+   "d1": 19.28315282355924
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000091",
+   "mask": "noc",
+   "valid_pixels": 99934,
+   "epe": 1.5140347480773926,
+   "bad_pixels": 17007,
+   "d1": 17.01823203314187
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000029",
+   "mask": "all",
+   "valid_pixels": 82168,
+   "epe": 0.6307040452957153,
+   "bad_pixels": 1706,
+   "d1": 2.0762340570538407
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000029",
+   "mask": "noc",
+   "valid_pixels": 81221,
+   "epe": 0.61577308177948,
+   "bad_pixels": 1574,
+   "d1": 1.9379224584774875
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000108",
+   "mask": "all",
+   "valid_pixels": 104757,
+   "epe": 0.6899881362915039,
+   "bad_pixels": 983,
+   "d1": 0.9383621142262569
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000108",
+   "mask": "noc",
+   "valid_pixels": 103577,
+   "epe": 0.6869320273399353,
+   "bad_pixels": 916,
+   "d1": 0.8843662202998734
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000164",
+   "mask": "all",
+   "valid_pixels": 105763,
+   "epe": 0.8245066404342651,
+   "bad_pixels": 2928,
+   "d1": 2.7684539961990486
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000164",
+   "mask": "noc",
+   "valid_pixels": 104237,
+   "epe": 0.8112051486968994,
+   "bad_pixels": 2609,
+   "d1": 2.502950008154494
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000136",
+   "mask": "all",
+   "valid_pixels": 81885,
+   "epe": 1.25997793674469,
+   "bad_pixels": 3004,
+   "d1": 3.66855956524394
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000136",
+   "mask": "noc",
+   "valid_pixels": 78604,
+   "epe": 1.213639736175537,
+   "bad_pixels": 2770,
+   "d1": 3.5239936898885555
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000184",
+   "mask": "all",
+   "valid_pixels": 91028,
+   "epe": 0.6578702330589294,
+   "bad_pixels": 1360,
+   "d1": 1.4940457881091531
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000184",
+   "mask": "noc",
+   "valid_pixels": 90021,
+   "epe": 0.6442023515701294,
+   "bad_pixels": 1193,
+   "d1": 1.3252463314115595
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000133",
+   "mask": "all",
+   "valid_pixels": 116057,
+   "epe": 0.5692145824432373,
+   "bad_pixels": 436,
+   "d1": 0.37567746882997144
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000133",
+   "mask": "noc",
+   "valid_pixels": 114583,
+   "epe": 0.5610989332199097,
+   "bad_pixels": 422,
+   "d1": 0.3682919804857614
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000191",
+   "mask": "all",
+   "valid_pixels": 82451,
+   "epe": 0.7583138346672058,
+   "bad_pixels": 1658,
+   "d1": 2.0108913172672254
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000191",
+   "mask": "noc",
+   "valid_pixels": 81079,
+   "epe": 0.7569618821144104,
+   "bad_pixels": 1654,
+   "d1": 2.0399856929661198
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000030",
+   "mask": "all",
+   "valid_pixels": 99941,
+   "epe": 0.7390300631523132,
+   "bad_pixels": 1583,
+   "d1": 1.5839345213676068
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000030",
+   "mask": "noc",
+   "valid_pixels": 98720,
+   "epe": 0.7287182807922363,
+   "bad_pixels": 1539,
+   "d1": 1.5589546191247974
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000071",
+   "mask": "all",
+   "valid_pixels": 105243,
+   "epe": 0.6022550463676453,
+   "bad_pixels": 953,
+   "d1": 0.9055234077325808
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000071",
+   "mask": "noc",
+   "valid_pixels": 103997,
+   "epe": 0.5841802358627319,
+   "bad_pixels": 811,
+   "d1": 0.7798301874092523
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000154",
+   "mask": "all",
+   "valid_pixels": 87691,
+   "epe": 0.6688022613525391,
+   "bad_pixels": 1000,
+   "d1": 1.1403678826789523
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000154",
+   "mask": "noc",
+   "valid_pixels": 86635,
+   "epe": 0.6542825698852539,
+   "bad_pixels": 934,
+   "d1": 1.078086223812547
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000092",
+   "mask": "all",
+   "valid_pixels": 83724,
+   "epe": 0.5655484199523926,
+   "bad_pixels": 406,
+   "d1": 0.4849266638001051
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000092",
+   "mask": "noc",
+   "valid_pixels": 82653,
+   "epe": 0.5598433017730713,
+   "bad_pixels": 402,
+   "d1": 0.4863707306449857
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000122",
+   "mask": "all",
+   "valid_pixels": 79974,
+   "epe": 0.6551337242126465,
+   "bad_pixels": 1064,
+   "d1": 1.330432390526921
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000122",
+   "mask": "noc",
+   "valid_pixels": 78809,
+   "epe": 0.6528975367546082,
+   "bad_pixels": 1055,
+   "d1": 1.3386795924323365
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000185",
+   "mask": "all",
+   "valid_pixels": 104083,
+   "epe": 0.5668028593063354,
+   "bad_pixels": 609,
+   "d1": 0.5851099603201291
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000185",
+   "mask": "noc",
+   "valid_pixels": 102428,
+   "epe": 0.5536316633224487,
+   "bad_pixels": 560,
+   "d1": 0.5467255047447964
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000101",
+   "mask": "all",
+   "valid_pixels": 114659,
+   "epe": 0.550722599029541,
+   "bad_pixels": 243,
+   "d1": 0.21193277457504425
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000101",
+   "mask": "noc",
+   "valid_pixels": 112951,
+   "epe": 0.5426262617111206,
+   "bad_pixels": 217,
+   "d1": 0.19211870634168798
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000079",
+   "mask": "all",
+   "valid_pixels": 90608,
+   "epe": 0.7035431265830994,
+   "bad_pixels": 899,
+   "d1": 0.992186120430867
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000079",
+   "mask": "noc",
+   "valid_pixels": 89712,
+   "epe": 0.6938550472259521,
+   "bad_pixels": 884,
+   "d1": 0.9853754235776708
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000194",
+   "mask": "all",
+   "valid_pixels": 106237,
+   "epe": 0.585283100605011,
+   "bad_pixels": 1363,
+   "d1": 1.2829805058501276
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000194",
+   "mask": "noc",
+   "valid_pixels": 98284,
+   "epe": 0.5361377596855164,
+   "bad_pixels": 1333,
+   "d1": 1.3562736559358592
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000149",
+   "mask": "all",
+   "valid_pixels": 105816,
+   "epe": 0.7180697321891785,
+   "bad_pixels": 256,
+   "d1": 0.24192938686021015
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000149",
+   "mask": "noc",
+   "valid_pixels": 104311,
+   "epe": 0.7168212532997131,
+   "bad_pixels": 247,
+   "d1": 0.23679190114177795
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000110",
+   "mask": "all",
+   "valid_pixels": 109133,
+   "epe": 0.5271705985069275,
+   "bad_pixels": 468,
+   "d1": 0.4288345413394666
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000110",
+   "mask": "noc",
+   "valid_pixels": 107212,
+   "epe": 0.522170901298523,
+   "bad_pixels": 453,
+   "d1": 0.42252732903033247
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000180",
+   "mask": "all",
+   "valid_pixels": 74070,
+   "epe": 0.7478191256523132,
+   "bad_pixels": 1078,
+   "d1": 1.4553800459025248
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000180",
+   "mask": "noc",
+   "valid_pixels": 72917,
+   "epe": 0.7384788990020752,
+   "bad_pixels": 1036,
+   "d1": 1.4207935049439775
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000065",
+   "mask": "all",
+   "valid_pixels": 82876,
+   "epe": 1.0415284633636475,
+   "bad_pixels": 5326,
+   "d1": 6.426468458902457
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000065",
+   "mask": "noc",
+   "valid_pixels": 81868,
+   "epe": 1.0287106037139893,
+   "bad_pixels": 5089,
+   "d1": 6.216103972248009
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000198",
+   "mask": "all",
+   "valid_pixels": 111787,
+   "epe": 0.5024283528327942,
+   "bad_pixels": 943,
+   "d1": 0.8435685723742474
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000198",
+   "mask": "noc",
+   "valid_pixels": 110030,
+   "epe": 0.49633505940437317,
+   "bad_pixels": 927,
+   "d1": 0.8424975006816323
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000085",
+   "mask": "all",
+   "valid_pixels": 117796,
+   "epe": 0.37838712334632874,
+   "bad_pixels": 138,
+   "d1": 0.11715168596556759
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000085",
+   "mask": "noc",
+   "valid_pixels": 114401,
+   "epe": 0.3758907616138458,
+   "bad_pixels": 131,
+   "d1": 0.11450948855342173
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000156",
+   "mask": "all",
+   "valid_pixels": 55073,
+   "epe": 0.5968261957168579,
+   "bad_pixels": 1070,
+   "d1": 1.942875819367022
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000156",
+   "mask": "noc",
+   "valid_pixels": 54213,
+   "epe": 0.542822539806366,
+   "bad_pixels": 866,
+   "d1": 1.5974028369579254
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000143",
+   "mask": "all",
+   "valid_pixels": 93241,
+   "epe": 0.5088698863983154,
+   "bad_pixels": 818,
+   "d1": 0.8772964682918459
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000143",
+   "mask": "noc",
+   "valid_pixels": 92278,
+   "epe": 0.5089048147201538,
+   "bad_pixels": 818,
+   "d1": 0.8864518086651205
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000125",
+   "mask": "all",
+   "valid_pixels": 106366,
+   "epe": 0.5223396420478821,
+   "bad_pixels": 361,
+   "d1": 0.33939416730910255
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000125",
+   "mask": "noc",
+   "valid_pixels": 104765,
+   "epe": 0.5133599638938904,
+   "bad_pixels": 344,
+   "d1": 0.3283539349973751
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000059",
+   "mask": "all",
+   "valid_pixels": 99129,
+   "epe": 0.6711479425430298,
+   "bad_pixels": 1277,
+   "d1": 1.2882203996812236
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000059",
+   "mask": "noc",
+   "valid_pixels": 97277,
+   "epe": 0.6587106585502625,
+   "bad_pixels": 1194,
+   "d1": 1.2274227206842316
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000026",
+   "mask": "all",
+   "valid_pixels": 104360,
+   "epe": 0.5978389978408813,
+   "bad_pixels": 1051,
+   "d1": 1.00709083940207
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000026",
+   "mask": "noc",
+   "valid_pixels": 103653,
+   "epe": 0.5974276661872864,
+   "bad_pixels": 1050,
+   "d1": 1.0129952823362565
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000033",
+   "mask": "all",
+   "valid_pixels": 78896,
+   "epe": 0.61258465051651,
+   "bad_pixels": 1263,
+   "d1": 1.600841614277023
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000033",
+   "mask": "noc",
+   "valid_pixels": 77923,
+   "epe": 0.593397855758667,
+   "bad_pixels": 1118,
+   "d1": 1.4347496887953493
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000003",
+   "mask": "all",
+   "valid_pixels": 94608,
+   "epe": 1.0788496732711792,
+   "bad_pixels": 2914,
+   "d1": 3.0800777946896667
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000003",
+   "mask": "noc",
+   "valid_pixels": 93346,
+   "epe": 1.0374083518981934,
+   "bad_pixels": 2354,
+   "d1": 2.5218006127739807
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000083",
+   "mask": "all",
+   "valid_pixels": 88505,
+   "epe": 0.6002999544143677,
+   "bad_pixels": 370,
+   "d1": 0.4180554770916898
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000083",
+   "mask": "noc",
+   "valid_pixels": 86501,
+   "epe": 0.5853697061538696,
+   "bad_pixels": 369,
+   "d1": 0.42658466376111254
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000027",
+   "mask": "all",
+   "valid_pixels": 108070,
+   "epe": 0.510970413684845,
+   "bad_pixels": 1221,
+   "d1": 1.1298232627001017
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000027",
+   "mask": "noc",
+   "valid_pixels": 106785,
+   "epe": 0.5016907453536987,
+   "bad_pixels": 1091,
+   "d1": 1.02167907477642
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000019",
+   "mask": "all",
+   "valid_pixels": 93165,
+   "epe": 1.2633315324783325,
+   "bad_pixels": 4716,
+   "d1": 5.061986797617131
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000019",
+   "mask": "noc",
+   "valid_pixels": 91793,
+   "epe": 1.2702444791793823,
+   "bad_pixels": 4715,
+   "d1": 5.136557253821097
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000199",
+   "mask": "all",
+   "valid_pixels": 49412,
+   "epe": 0.6584098935127258,
+   "bad_pixels": 470,
+   "d1": 0.951185946733587
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000199",
+   "mask": "noc",
+   "valid_pixels": 48744,
+   "epe": 0.6425809264183044,
+   "bad_pixels": 450,
+   "d1": 0.9231905465288036
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000106",
+   "mask": "all",
+   "valid_pixels": 111100,
+   "epe": 0.6052039265632629,
+   "bad_pixels": 784,
+   "d1": 0.7056705670567056
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000106",
+   "mask": "noc",
+   "valid_pixels": 109591,
+   "epe": 0.5972806811332703,
+   "bad_pixels": 680,
+   "d1": 0.6204889087607559
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000094",
+   "mask": "all",
+   "valid_pixels": 114926,
+   "epe": 0.4115309715270996,
+   "bad_pixels": 415,
+   "d1": 0.3611019264570245
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000094",
+   "mask": "noc",
+   "valid_pixels": 107818,
+   "epe": 0.41755858063697815,
+   "bad_pixels": 415,
+   "d1": 0.3849079003505908
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000002",
+   "mask": "all",
+   "valid_pixels": 100480,
+   "epe": 0.7210614085197449,
+   "bad_pixels": 733,
+   "d1": 0.7294984076433121
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000002",
+   "mask": "noc",
+   "valid_pixels": 100125,
+   "epe": 0.7188239693641663,
+   "bad_pixels": 727,
+   "d1": 0.7260923845193508
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000107",
+   "mask": "all",
+   "valid_pixels": 105568,
+   "epe": 0.6977088451385498,
+   "bad_pixels": 1175,
+   "d1": 1.1130266747499242
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000107",
+   "mask": "noc",
+   "valid_pixels": 104162,
+   "epe": 0.6925709843635559,
+   "bad_pixels": 1070,
+   "d1": 1.0272460206217238
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000080",
+   "mask": "all",
+   "valid_pixels": 73921,
+   "epe": 0.6743391752243042,
+   "bad_pixels": 937,
+   "d1": 1.2675694322317068
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000080",
+   "mask": "noc",
+   "valid_pixels": 72788,
+   "epe": 0.6777007579803467,
+   "bad_pixels": 933,
+   "d1": 1.2818046930812772
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000187",
+   "mask": "all",
+   "valid_pixels": 78662,
+   "epe": 0.5920391082763672,
+   "bad_pixels": 1982,
+   "d1": 2.5196409956522845
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000187",
+   "mask": "noc",
+   "valid_pixels": 77961,
+   "epe": 0.5802327990531921,
+   "bad_pixels": 1759,
+   "d1": 2.2562563332948526
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000012",
+   "mask": "all",
+   "valid_pixels": 77658,
+   "epe": 0.6374954581260681,
+   "bad_pixels": 511,
+   "d1": 0.6580133405444384
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000012",
+   "mask": "noc",
+   "valid_pixels": 76639,
+   "epe": 0.6351158022880554,
+   "bad_pixels": 511,
+   "d1": 0.6667623533709991
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000046",
+   "mask": "all",
+   "valid_pixels": 55068,
+   "epe": 0.5684168338775635,
+   "bad_pixels": 259,
+   "d1": 0.4703275949734873
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000046",
+   "mask": "noc",
+   "valid_pixels": 54414,
+   "epe": 0.5643048286437988,
+   "bad_pixels": 259,
+   "d1": 0.4759804462086963
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000147",
+   "mask": "all",
+   "valid_pixels": 109444,
+   "epe": 0.7419742345809937,
+   "bad_pixels": 1423,
+   "d1": 1.3002083257190893
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000147",
+   "mask": "noc",
+   "valid_pixels": 108318,
+   "epe": 0.7386351227760315,
+   "bad_pixels": 1358,
+   "d1": 1.2537159105596485
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000088",
+   "mask": "all",
+   "valid_pixels": 104207,
+   "epe": 0.5835067629814148,
+   "bad_pixels": 1241,
+   "d1": 1.1908988839521337
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000088",
+   "mask": "noc",
+   "valid_pixels": 102661,
+   "epe": 0.5817729830741882,
+   "bad_pixels": 1233,
+   "d1": 1.2010403171603627
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000150",
+   "mask": "all",
+   "valid_pixels": 105453,
+   "epe": 0.6157844066619873,
+   "bad_pixels": 659,
+   "d1": 0.6249229514570472
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000150",
+   "mask": "noc",
+   "valid_pixels": 104006,
+   "epe": 0.6132663488388062,
+   "bad_pixels": 659,
+   "d1": 0.6336172913101167
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000116",
+   "mask": "all",
+   "valid_pixels": 100226,
+   "epe": 0.6574438810348511,
+   "bad_pixels": 1062,
+   "d1": 1.0596052920399897
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000116",
+   "mask": "noc",
+   "valid_pixels": 98602,
+   "epe": 0.6578536033630371,
+   "bad_pixels": 1046,
+   "d1": 1.0608304091194904
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000024",
+   "mask": "all",
+   "valid_pixels": 69282,
+   "epe": 0.5661671161651611,
+   "bad_pixels": 1121,
+   "d1": 1.6180248838082043
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000024",
+   "mask": "noc",
+   "valid_pixels": 69008,
+   "epe": 0.5647331476211548,
+   "bad_pixels": 1121,
+   "d1": 1.6244493392070485
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000077",
+   "mask": "all",
+   "valid_pixels": 118029,
+   "epe": 0.9686295390129089,
+   "bad_pixels": 843,
+   "d1": 0.7142312482525481
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000077",
+   "mask": "noc",
+   "valid_pixels": 110367,
+   "epe": 0.8007705807685852,
+   "bad_pixels": 362,
+   "d1": 0.327996593184557
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000179",
+   "mask": "all",
+   "valid_pixels": 80114,
+   "epe": 0.7646567225456238,
+   "bad_pixels": 1948,
+   "d1": 2.4315350625358865
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000179",
+   "mask": "noc",
+   "valid_pixels": 78937,
+   "epe": 0.7499613761901855,
+   "bad_pixels": 1746,
+   "d1": 2.2118904949516702
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000060",
+   "mask": "all",
+   "valid_pixels": 95526,
+   "epe": 0.8737604022026062,
+   "bad_pixels": 3901,
+   "d1": 4.083704959906203
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000060",
+   "mask": "noc",
+   "valid_pixels": 94169,
+   "epe": 0.8555865287780762,
+   "bad_pixels": 3602,
+   "d1": 3.825037963661077
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000168",
+   "mask": "all",
+   "valid_pixels": 90323,
+   "epe": 1.1427628993988037,
+   "bad_pixels": 3983,
+   "d1": 4.409729526255771
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000168",
+   "mask": "noc",
+   "valid_pixels": 88599,
+   "epe": 1.1462477445602417,
+   "bad_pixels": 3784,
+   "d1": 4.270928565785167
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000087",
+   "mask": "all",
+   "valid_pixels": 76448,
+   "epe": 0.840950608253479,
+   "bad_pixels": 1274,
+   "d1": 1.6664922561741315
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000087",
+   "mask": "noc",
+   "valid_pixels": 75103,
+   "epe": 0.8297975063323975,
+   "bad_pixels": 1258,
+   "d1": 1.675032954742154
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000172",
+   "mask": "all",
+   "valid_pixels": 88736,
+   "epe": 0.5103867053985596,
+   "bad_pixels": 531,
+   "d1": 0.598404255319149
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000172",
+   "mask": "noc",
+   "valid_pixels": 87352,
+   "epe": 0.5031896829605103,
+   "bad_pixels": 510,
+   "d1": 0.5838446744207345
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000195",
+   "mask": "all",
+   "valid_pixels": 119075,
+   "epe": 0.7599405646324158,
+   "bad_pixels": 2160,
+   "d1": 1.8139827839596894
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000195",
+   "mask": "noc",
+   "valid_pixels": 117061,
+   "epe": 0.7611847519874573,
+   "bad_pixels": 2160,
+   "d1": 1.8451918230666065
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000074",
+   "mask": "all",
+   "valid_pixels": 79089,
+   "epe": 0.7568050622940063,
+   "bad_pixels": 731,
+   "d1": 0.9242751836538584
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000074",
+   "mask": "noc",
+   "valid_pixels": 77896,
+   "epe": 0.7544922232627869,
+   "bad_pixels": 720,
+   "d1": 0.9243093355242888
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000135",
+   "mask": "all",
+   "valid_pixels": 103102,
+   "epe": 0.5103829503059387,
+   "bad_pixels": 407,
+   "d1": 0.39475470892902176
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000135",
+   "mask": "noc",
+   "valid_pixels": 101752,
+   "epe": 0.5034030079841614,
+   "bad_pixels": 356,
+   "d1": 0.3498702728201903
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000031",
+   "mask": "all",
+   "valid_pixels": 103688,
+   "epe": 0.719536304473877,
+   "bad_pixels": 1579,
+   "d1": 1.5228377440012346
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000031",
+   "mask": "noc",
+   "valid_pixels": 102480,
+   "epe": 0.7036702036857605,
+   "bad_pixels": 1466,
+   "d1": 1.4305230288836845
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000006",
+   "mask": "all",
+   "valid_pixels": 111326,
+   "epe": 1.0964144468307495,
+   "bad_pixels": 1904,
+   "d1": 1.7102922947020462
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000006",
+   "mask": "noc",
+   "valid_pixels": 109779,
+   "epe": 1.0675972700119019,
+   "bad_pixels": 1432,
+   "d1": 1.304438918190182
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000190",
+   "mask": "all",
+   "valid_pixels": 120622,
+   "epe": 0.6517748236656189,
+   "bad_pixels": 1631,
+   "d1": 1.3521579811311368
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000190",
+   "mask": "noc",
+   "valid_pixels": 118419,
+   "epe": 0.6419278383255005,
+   "bad_pixels": 1608,
+   "d1": 1.3578902034301927
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000131",
+   "mask": "all",
+   "valid_pixels": 99105,
+   "epe": 0.6076883673667908,
+   "bad_pixels": 658,
+   "d1": 0.663942283436759
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000131",
+   "mask": "noc",
+   "valid_pixels": 97248,
+   "epe": 0.6023080348968506,
+   "bad_pixels": 640,
+   "d1": 0.6581112207963146
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000158",
+   "mask": "all",
+   "valid_pixels": 79956,
+   "epe": 0.666454553604126,
+   "bad_pixels": 1172,
+   "d1": 1.4658061934063735
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000158",
+   "mask": "noc",
+   "valid_pixels": 78826,
+   "epe": 0.660477340221405,
+   "bad_pixels": 1082,
+   "d1": 1.3726435440083222
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000020",
+   "mask": "all",
+   "valid_pixels": 125566,
+   "epe": 1.0539640188217163,
+   "bad_pixels": 3345,
+   "d1": 2.66393769013905
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000020",
+   "mask": "noc",
+   "valid_pixels": 123975,
+   "epe": 1.0553178787231445,
+   "bad_pixels": 3296,
+   "d1": 2.6586005242992536
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000153",
+   "mask": "all",
+   "valid_pixels": 47292,
+   "epe": 0.6100788712501526,
+   "bad_pixels": 687,
+   "d1": 1.4526769855366657
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000153",
+   "mask": "noc",
+   "valid_pixels": 46794,
+   "epe": 0.604310929775238,
+   "bad_pixels": 687,
+   "d1": 1.4681369406334144
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000144",
+   "mask": "all",
+   "valid_pixels": 51156,
+   "epe": 0.5311656594276428,
+   "bad_pixels": 151,
+   "d1": 0.2951755414809602
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000144",
+   "mask": "noc",
+   "valid_pixels": 51156,
+   "epe": 0.5311658978462219,
+   "bad_pixels": 151,
+   "d1": 0.2951755414809602
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000126",
+   "mask": "all",
+   "valid_pixels": 101884,
+   "epe": 0.6219580173492432,
+   "bad_pixels": 1059,
+   "d1": 1.0394173766243964
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000126",
+   "mask": "noc",
+   "valid_pixels": 100063,
+   "epe": 0.6182429790496826,
+   "bad_pixels": 1052,
+   "d1": 1.051337657275916
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000162",
+   "mask": "all",
+   "valid_pixels": 59566,
+   "epe": 0.8671517372131348,
+   "bad_pixels": 1793,
+   "d1": 3.010106436557768
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000162",
+   "mask": "noc",
+   "valid_pixels": 58888,
+   "epe": 0.8629065155982971,
+   "bad_pixels": 1781,
+   "d1": 3.024385273739981
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000062",
+   "mask": "all",
+   "valid_pixels": 91650,
+   "epe": 0.7556450963020325,
+   "bad_pixels": 3725,
+   "d1": 4.064375340971085
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000062",
+   "mask": "noc",
+   "valid_pixels": 89952,
+   "epe": 0.7479987740516663,
+   "bad_pixels": 3554,
+   "d1": 3.95099608680185
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000061",
+   "mask": "all",
+   "valid_pixels": 65559,
+   "epe": 1.069593071937561,
+   "bad_pixels": 4223,
+   "d1": 6.441525953721075
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000061",
+   "mask": "noc",
+   "valid_pixels": 64806,
+   "epe": 1.0359539985656738,
+   "bad_pixels": 3703,
+   "d1": 5.713977100885721
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000141",
+   "mask": "all",
+   "valid_pixels": 108767,
+   "epe": 0.6478645205497742,
+   "bad_pixels": 542,
+   "d1": 0.4983129074075777
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000141",
+   "mask": "noc",
+   "valid_pixels": 107077,
+   "epe": 0.6394819617271423,
+   "bad_pixels": 509,
+   "d1": 0.47535885390886934
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000040",
+   "mask": "all",
+   "valid_pixels": 93683,
+   "epe": 0.6336610317230225,
+   "bad_pixels": 992,
+   "d1": 1.0588900867820203
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000040",
+   "mask": "noc",
+   "valid_pixels": 91941,
+   "epe": 0.6288790106773376,
+   "bad_pixels": 960,
+   "d1": 1.044147877443143
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000005",
+   "mask": "all",
+   "valid_pixels": 92921,
+   "epe": 0.6158513426780701,
+   "bad_pixels": 631,
+   "d1": 0.6790714693126418
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000005",
+   "mask": "noc",
+   "valid_pixels": 91126,
+   "epe": 0.6051738858222961,
+   "bad_pixels": 555,
+   "d1": 0.6090468143010775
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000115",
+   "mask": "all",
+   "valid_pixels": 97581,
+   "epe": 0.8296765685081482,
+   "bad_pixels": 1147,
+   "d1": 1.1754337422244083
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000115",
+   "mask": "noc",
+   "valid_pixels": 96404,
+   "epe": 0.8302527666091919,
+   "bad_pixels": 1147,
+   "d1": 1.1897846562383303
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000051",
+   "mask": "all",
+   "valid_pixels": 60120,
+   "epe": 0.643403947353363,
+   "bad_pixels": 364,
+   "d1": 0.605455755156354
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000051",
+   "mask": "noc",
+   "valid_pixels": 59387,
+   "epe": 0.6412225961685181,
+   "bad_pixels": 364,
+   "d1": 0.6129287554515298
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000177",
+   "mask": "all",
+   "valid_pixels": 98858,
+   "epe": 0.5989462733268738,
+   "bad_pixels": 898,
+   "d1": 0.9083736268182646
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000177",
+   "mask": "noc",
+   "valid_pixels": 97492,
+   "epe": 0.5992507338523865,
+   "bad_pixels": 894,
+   "d1": 0.9169983178106921
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000100",
+   "mask": "all",
+   "valid_pixels": 123088,
+   "epe": 0.5811497569084167,
+   "bad_pixels": 658,
+   "d1": 0.5345768880800729
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000100",
+   "mask": "noc",
+   "valid_pixels": 121565,
+   "epe": 0.5735689997673035,
+   "bad_pixels": 580,
+   "d1": 0.4771110105704767
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000017",
+   "mask": "all",
+   "valid_pixels": 76342,
+   "epe": 0.5804398059844971,
+   "bad_pixels": 555,
+   "d1": 0.7269916952660396
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000017",
+   "mask": "noc",
+   "valid_pixels": 73535,
+   "epe": 0.5581929683685303,
+   "bad_pixels": 449,
+   "d1": 0.6105935948867885
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000069",
+   "mask": "all",
+   "valid_pixels": 81558,
+   "epe": 0.9231093525886536,
+   "bad_pixels": 4638,
+   "d1": 5.68675053336276
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000069",
+   "mask": "noc",
+   "valid_pixels": 80240,
+   "epe": 0.9139315485954285,
+   "bad_pixels": 4451,
+   "d1": 5.547108673978066
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000049",
+   "mask": "all",
+   "valid_pixels": 82313,
+   "epe": 1.0362677574157715,
+   "bad_pixels": 1788,
+   "d1": 2.172196372383463
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000049",
+   "mask": "noc",
+   "valid_pixels": 81631,
+   "epe": 1.0378817319869995,
+   "bad_pixels": 1788,
+   "d1": 2.1903443544731784
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000182",
+   "mask": "all",
+   "valid_pixels": 74692,
+   "epe": 0.8655686378479004,
+   "bad_pixels": 1311,
+   "d1": 1.755208054410111
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000182",
+   "mask": "noc",
+   "valid_pixels": 73518,
+   "epe": 0.8574117422103882,
+   "bad_pixels": 1265,
+   "d1": 1.7206670475257761
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000081",
+   "mask": "all",
+   "valid_pixels": 76999,
+   "epe": 0.6373806595802307,
+   "bad_pixels": 702,
+   "d1": 0.9117001519500253
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000081",
+   "mask": "noc",
+   "valid_pixels": 75883,
+   "epe": 0.6286770105361938,
+   "bad_pixels": 662,
+   "d1": 0.8723956617424193
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000086",
+   "mask": "all",
+   "valid_pixels": 112255,
+   "epe": 0.6775060296058655,
+   "bad_pixels": 1017,
+   "d1": 0.905973007883836
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000086",
+   "mask": "noc",
+   "valid_pixels": 110878,
+   "epe": 0.6636765003204346,
+   "bad_pixels": 879,
+   "d1": 0.7927632172297481
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000082",
+   "mask": "all",
+   "valid_pixels": 107834,
+   "epe": 0.5787827968597412,
+   "bad_pixels": 586,
+   "d1": 0.5434278613424337
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000082",
+   "mask": "noc",
+   "valid_pixels": 105795,
+   "epe": 0.5542672276496887,
+   "bad_pixels": 427,
+   "d1": 0.4036107566520157
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000171",
+   "mask": "all",
+   "valid_pixels": 86429,
+   "epe": 0.5836154222488403,
+   "bad_pixels": 310,
+   "d1": 0.3586759073921948
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000171",
+   "mask": "noc",
+   "valid_pixels": 85472,
+   "epe": 0.5868245363235474,
+   "bad_pixels": 310,
+   "d1": 0.3626918757019843
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000076",
+   "mask": "all",
+   "valid_pixels": 81106,
+   "epe": 0.5445970296859741,
+   "bad_pixels": 220,
+   "d1": 0.27124996917613986
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000076",
+   "mask": "noc",
+   "valid_pixels": 80166,
+   "epe": 0.5401486158370972,
+   "bad_pixels": 220,
+   "d1": 0.27443055659506527
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000036",
+   "mask": "all",
+   "valid_pixels": 92893,
+   "epe": 0.8075615167617798,
+   "bad_pixels": 2192,
+   "d1": 2.359704175772125
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000036",
+   "mask": "noc",
+   "valid_pixels": 91429,
+   "epe": 0.8036365509033203,
+   "bad_pixels": 2141,
+   "d1": 2.3417077732448126
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000009",
+   "mask": "all",
+   "valid_pixels": 95997,
+   "epe": 0.5974909067153931,
+   "bad_pixels": 522,
+   "d1": 0.5437669927185225
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000009",
+   "mask": "noc",
+   "valid_pixels": 95174,
+   "epe": 0.5931030511856079,
+   "bad_pixels": 515,
+   "d1": 0.5411141698362998
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000045",
+   "mask": "all",
+   "valid_pixels": 69438,
+   "epe": 0.6218849420547485,
+   "bad_pixels": 213,
+   "d1": 0.3067484662576687
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000045",
+   "mask": "noc",
+   "valid_pixels": 68822,
+   "epe": 0.6194690465927124,
+   "bad_pixels": 213,
+   "d1": 0.3094940571328936
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000142",
+   "mask": "all",
+   "valid_pixels": 84945,
+   "epe": 0.5567209720611572,
+   "bad_pixels": 349,
+   "d1": 0.4108540820530932
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000142",
+   "mask": "noc",
+   "valid_pixels": 83912,
+   "epe": 0.5527833700180054,
+   "bad_pixels": 342,
+   "d1": 0.4075698350653065
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000104",
+   "mask": "all",
+   "valid_pixels": 129761,
+   "epe": 1.10781991481781,
+   "bad_pixels": 7126,
+   "d1": 5.491634620571666
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000104",
+   "mask": "noc",
+   "valid_pixels": 126559,
+   "epe": 1.0790588855743408,
+   "bad_pixels": 6463,
+   "d1": 5.106709123807868
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000004",
+   "mask": "all",
+   "valid_pixels": 97007,
+   "epe": 0.5460085272789001,
+   "bad_pixels": 977,
+   "d1": 1.0071438143639118
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000004",
+   "mask": "noc",
+   "valid_pixels": 94606,
+   "epe": 0.5227872133255005,
+   "bad_pixels": 861,
+   "d1": 0.9100902691161237
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000090",
+   "mask": "all",
+   "valid_pixels": 86518,
+   "epe": 1.1299675703048706,
+   "bad_pixels": 1868,
+   "d1": 2.1590882822071706
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000090",
+   "mask": "noc",
+   "valid_pixels": 78941,
+   "epe": 1.0803723335266113,
+   "bad_pixels": 1706,
+   "d1": 2.16110766268479
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000159",
+   "mask": "all",
+   "valid_pixels": 105599,
+   "epe": 0.6434016227722168,
+   "bad_pixels": 2039,
+   "d1": 1.930889497059631
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000159",
+   "mask": "noc",
+   "valid_pixels": 103902,
+   "epe": 0.638339638710022,
+   "bad_pixels": 1982,
+   "d1": 1.9075667455871879
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000114",
+   "mask": "all",
+   "valid_pixels": 56562,
+   "epe": 0.692970335483551,
+   "bad_pixels": 701,
+   "d1": 1.2393479721367702
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000114",
+   "mask": "noc",
+   "valid_pixels": 55795,
+   "epe": 0.6918302774429321,
+   "bad_pixels": 696,
+   "d1": 1.2474236042656153
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000050",
+   "mask": "all",
+   "valid_pixels": 47374,
+   "epe": 0.5871238708496094,
+   "bad_pixels": 343,
+   "d1": 0.7240258369569806
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000050",
+   "mask": "noc",
+   "valid_pixels": 46612,
+   "epe": 0.5818352103233337,
+   "bad_pixels": 343,
+   "d1": 0.7358620097828885
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000098",
+   "mask": "all",
+   "valid_pixels": 107619,
+   "epe": 0.7881324887275696,
+   "bad_pixels": 802,
+   "d1": 0.7452215686821101
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000098",
+   "mask": "noc",
+   "valid_pixels": 104207,
+   "epe": 0.7763442993164062,
+   "bad_pixels": 745,
+   "d1": 0.7149231817440287
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000064",
+   "mask": "all",
+   "valid_pixels": 91039,
+   "epe": 0.8767993450164795,
+   "bad_pixels": 4279,
+   "d1": 4.700183437867287
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000064",
+   "mask": "noc",
+   "valid_pixels": 89648,
+   "epe": 0.845034122467041,
+   "bad_pixels": 3677,
+   "d1": 4.101597358557915
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000066",
+   "mask": "all",
+   "valid_pixels": 87732,
+   "epe": 0.9155601263046265,
+   "bad_pixels": 3936,
+   "d1": 4.486390370674327
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000066",
+   "mask": "noc",
+   "valid_pixels": 86735,
+   "epe": 0.8986222147941589,
+   "bad_pixels": 3575,
+   "d1": 4.121750158528852
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000043",
+   "mask": "all",
+   "valid_pixels": 52044,
+   "epe": 0.5665450096130371,
+   "bad_pixels": 351,
+   "d1": 0.6744293290292829
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000043",
+   "mask": "noc",
+   "valid_pixels": 51327,
+   "epe": 0.5627325177192688,
+   "bad_pixels": 351,
+   "d1": 0.6838506049447659
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000001",
+   "mask": "all",
+   "valid_pixels": 107175,
+   "epe": 0.6022597551345825,
+   "bad_pixels": 737,
+   "d1": 0.6876603685560998
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000001",
+   "mask": "noc",
+   "valid_pixels": 106133,
+   "epe": 0.5969352126121521,
+   "bad_pixels": 686,
+   "d1": 0.6463588139409986
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000010",
+   "mask": "all",
+   "valid_pixels": 111664,
+   "epe": 0.6054404973983765,
+   "bad_pixels": 628,
+   "d1": 0.5624014901848402
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000010",
+   "mask": "noc",
+   "valid_pixels": 110349,
+   "epe": 0.5986384153366089,
+   "bad_pixels": 622,
+   "d1": 0.5636661863723278
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000055",
+   "mask": "all",
+   "valid_pixels": 120090,
+   "epe": 0.5482915043830872,
+   "bad_pixels": 773,
+   "d1": 0.6436839037388625
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000055",
+   "mask": "noc",
+   "valid_pixels": 118282,
+   "epe": 0.5450505018234253,
+   "bad_pixels": 770,
+   "d1": 0.6509866251838826
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000011",
+   "mask": "all",
+   "valid_pixels": 61974,
+   "epe": 0.5430446267127991,
+   "bad_pixels": 238,
+   "d1": 0.38403201342498466
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000011",
+   "mask": "noc",
+   "valid_pixels": 61339,
+   "epe": 0.5372788310050964,
+   "bad_pixels": 238,
+   "d1": 0.3880076297298619
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000188",
+   "mask": "all",
+   "valid_pixels": 114966,
+   "epe": 0.5793002247810364,
+   "bad_pixels": 594,
+   "d1": 0.5166744950681071
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000188",
+   "mask": "noc",
+   "valid_pixels": 113465,
+   "epe": 0.5638237595558167,
+   "bad_pixels": 401,
+   "d1": 0.35341294672365925
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000063",
+   "mask": "all",
+   "valid_pixels": 70506,
+   "epe": 0.7804224491119385,
+   "bad_pixels": 2436,
+   "d1": 3.4550251042464475
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000063",
+   "mask": "noc",
+   "valid_pixels": 69528,
+   "epe": 0.7728275060653687,
+   "bad_pixels": 2354,
+   "d1": 3.3856863421930736
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000197",
+   "mask": "all",
+   "valid_pixels": 127549,
+   "epe": 0.6315070390701294,
+   "bad_pixels": 1045,
+   "d1": 0.8192929776007652
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000197",
+   "mask": "noc",
+   "valid_pixels": 126037,
+   "epe": 0.6303154826164246,
+   "bad_pixels": 1039,
+   "d1": 0.8243611003118132
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000047",
+   "mask": "all",
+   "valid_pixels": 68907,
+   "epe": 0.5386185050010681,
+   "bad_pixels": 266,
+   "d1": 0.38602754437139913
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000047",
+   "mask": "noc",
+   "valid_pixels": 68201,
+   "epe": 0.5352475047111511,
+   "bad_pixels": 266,
+   "d1": 0.390023606691984
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000042",
+   "mask": "all",
+   "valid_pixels": 65762,
+   "epe": 0.9013782739639282,
+   "bad_pixels": 1696,
+   "d1": 2.578996989142666
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000042",
+   "mask": "noc",
+   "valid_pixels": 64502,
+   "epe": 0.9008561372756958,
+   "bad_pixels": 1660,
+   "d1": 2.5735636104306843
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000056",
+   "mask": "all",
+   "valid_pixels": 93110,
+   "epe": 0.5291305184364319,
+   "bad_pixels": 413,
+   "d1": 0.4435613790140694
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000056",
+   "mask": "noc",
+   "valid_pixels": 91766,
+   "epe": 0.5255377292633057,
+   "bad_pixels": 413,
+   "d1": 0.45005775559575445
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000119",
+   "mask": "all",
+   "valid_pixels": 95732,
+   "epe": 0.6635797619819641,
+   "bad_pixels": 1193,
+   "d1": 1.2461872728032424
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000119",
+   "mask": "noc",
+   "valid_pixels": 94145,
+   "epe": 0.6376057863235474,
+   "bad_pixels": 1028,
+   "d1": 1.0919326570715386
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000124",
+   "mask": "all",
+   "valid_pixels": 90721,
+   "epe": 0.5990169048309326,
+   "bad_pixels": 749,
+   "d1": 0.8256081833313125
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000124",
+   "mask": "noc",
+   "valid_pixels": 89140,
+   "epe": 0.5943467617034912,
+   "bad_pixels": 737,
+   "d1": 0.8267893201705182
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000186",
+   "mask": "all",
+   "valid_pixels": 81274,
+   "epe": 0.516482949256897,
+   "bad_pixels": 771,
+   "d1": 0.9486428624160248
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000186",
+   "mask": "noc",
+   "valid_pixels": 80171,
+   "epe": 0.5014804005622864,
+   "bad_pixels": 641,
+   "d1": 0.7995409811527859
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000167",
+   "mask": "all",
+   "valid_pixels": 99751,
+   "epe": 0.711950421333313,
+   "bad_pixels": 859,
+   "d1": 0.8611442491804594
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000167",
+   "mask": "noc",
+   "valid_pixels": 98167,
+   "epe": 0.7074355483055115,
+   "bad_pixels": 744,
+   "d1": 0.757892163354284
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000016",
+   "mask": "all",
+   "valid_pixels": 85008,
+   "epe": 0.4607398211956024,
+   "bad_pixels": 294,
+   "d1": 0.3458498023715415
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000016",
+   "mask": "noc",
+   "valid_pixels": 84034,
+   "epe": 0.4539937376976013,
+   "bad_pixels": 245,
+   "d1": 0.2915486588761692
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000161",
+   "mask": "all",
+   "valid_pixels": 116474,
+   "epe": 1.6618690490722656,
+   "bad_pixels": 4592,
+   "d1": 3.9425107749368955
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000161",
+   "mask": "noc",
+   "valid_pixels": 109314,
+   "epe": 1.3907002210617065,
+   "bad_pixels": 3094,
+   "d1": 2.8303785425471575
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000099",
+   "mask": "all",
+   "valid_pixels": 53438,
+   "epe": 0.541100800037384,
+   "bad_pixels": 318,
+   "d1": 0.5950821512781167
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000099",
+   "mask": "noc",
+   "valid_pixels": 52859,
+   "epe": 0.5336452126502991,
+   "bad_pixels": 276,
+   "d1": 0.5221438165686071
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000057",
+   "mask": "all",
+   "valid_pixels": 101129,
+   "epe": 0.7068148851394653,
+   "bad_pixels": 814,
+   "d1": 0.8049125374521651
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000057",
+   "mask": "noc",
+   "valid_pixels": 98681,
+   "epe": 0.7090276479721069,
+   "bad_pixels": 793,
+   "d1": 0.8035994771029884
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000052",
+   "mask": "all",
+   "valid_pixels": 72484,
+   "epe": 0.5682297945022583,
+   "bad_pixels": 408,
+   "d1": 0.5628828431102036
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000052",
+   "mask": "noc",
+   "valid_pixels": 71838,
+   "epe": 0.5652937293052673,
+   "bad_pixels": 408,
+   "d1": 0.5679445418859099
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000183",
+   "mask": "all",
+   "valid_pixels": 99320,
+   "epe": 0.6217479705810547,
+   "bad_pixels": 834,
+   "d1": 0.8397100281917036
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000183",
+   "mask": "noc",
+   "valid_pixels": 97207,
+   "epe": 0.6054219603538513,
+   "bad_pixels": 686,
+   "d1": 0.7057104941002191
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000073",
+   "mask": "all",
+   "valid_pixels": 76769,
+   "epe": 0.6056331992149353,
+   "bad_pixels": 295,
+   "d1": 0.3842696921934635
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000073",
+   "mask": "noc",
+   "valid_pixels": 75443,
+   "epe": 0.5997940897941589,
+   "bad_pixels": 269,
+   "d1": 0.3565605821613668
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000130",
+   "mask": "all",
+   "valid_pixels": 102205,
+   "epe": 0.650150716304779,
+   "bad_pixels": 758,
+   "d1": 0.7416466904750256
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000130",
+   "mask": "noc",
+   "valid_pixels": 101266,
+   "epe": 0.6404948234558105,
+   "bad_pixels": 657,
+   "d1": 0.6487863646238619
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000070",
+   "mask": "all",
+   "valid_pixels": 59337,
+   "epe": 0.6335428357124329,
+   "bad_pixels": 665,
+   "d1": 1.1207172590457892
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000070",
+   "mask": "noc",
+   "valid_pixels": 57588,
+   "epe": 0.6205418705940247,
+   "bad_pixels": 627,
+   "d1": 1.0887684934361326
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000028",
+   "mask": "all",
+   "valid_pixels": 112443,
+   "epe": 0.5762599110603333,
+   "bad_pixels": 1592,
+   "d1": 1.4158284641996388
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000028",
+   "mask": "noc",
+   "valid_pixels": 111269,
+   "epe": 0.5644397139549255,
+   "bad_pixels": 1402,
+   "d1": 1.260009526462896
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000120",
+   "mask": "all",
+   "valid_pixels": 75523,
+   "epe": 1.1322051286697388,
+   "bad_pixels": 1212,
+   "d1": 1.6048091309932073
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000120",
+   "mask": "noc",
+   "valid_pixels": 73966,
+   "epe": 1.1126720905303955,
+   "bad_pixels": 1123,
+   "d1": 1.5182651488521752
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000152",
+   "mask": "all",
+   "valid_pixels": 74940,
+   "epe": 0.6128276586532593,
+   "bad_pixels": 881,
+   "d1": 1.1756071523885776
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000152",
+   "mask": "noc",
+   "valid_pixels": 74089,
+   "epe": 0.6037450432777405,
+   "bad_pixels": 859,
+   "d1": 1.1594163775999136
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000174",
+   "mask": "all",
+   "valid_pixels": 100837,
+   "epe": 1.0175881385803223,
+   "bad_pixels": 2986,
+   "d1": 2.961214633517459
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000174",
+   "mask": "noc",
+   "valid_pixels": 99075,
+   "epe": 0.9861208200454712,
+   "bad_pixels": 2414,
+   "d1": 2.436537976280596
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000054",
+   "mask": "all",
+   "valid_pixels": 120896,
+   "epe": 0.43472418189048767,
+   "bad_pixels": 470,
+   "d1": 0.38876389624139757
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000054",
+   "mask": "noc",
+   "valid_pixels": 118961,
+   "epe": 0.43078166246414185,
+   "bad_pixels": 470,
+   "d1": 0.3950874656399997
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000173",
+   "mask": "all",
+   "valid_pixels": 118815,
+   "epe": 0.6286453008651733,
+   "bad_pixels": 877,
+   "d1": 0.738122290956529
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000173",
+   "mask": "noc",
+   "valid_pixels": 117542,
+   "epe": 0.625076949596405,
+   "bad_pixels": 789,
+   "d1": 0.6712494257371834
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000155",
+   "mask": "all",
+   "valid_pixels": 58660,
+   "epe": 1.1346997022628784,
+   "bad_pixels": 1517,
+   "d1": 2.5860893283327653
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000155",
+   "mask": "noc",
+   "valid_pixels": 57020,
+   "epe": 1.0233899354934692,
+   "bad_pixels": 941,
+   "d1": 1.6502981410031567
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000175",
+   "mask": "all",
+   "valid_pixels": 66897,
+   "epe": 0.9948411583900452,
+   "bad_pixels": 1869,
+   "d1": 2.7938472577245617
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000175",
+   "mask": "noc",
+   "valid_pixels": 66619,
+   "epe": 0.9790720343589783,
+   "bad_pixels": 1738,
+   "d1": 2.608865338717183
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000025",
+   "mask": "all",
+   "valid_pixels": 105013,
+   "epe": 0.6584481596946716,
+   "bad_pixels": 2646,
+   "d1": 2.5196880386237894
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000025",
+   "mask": "noc",
+   "valid_pixels": 103694,
+   "epe": 0.6325411200523376,
+   "bad_pixels": 2477,
+   "d1": 2.3887592338997434
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000109",
+   "mask": "all",
+   "valid_pixels": 110962,
+   "epe": 0.6045059561729431,
+   "bad_pixels": 477,
+   "d1": 0.42987689479281194
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000109",
+   "mask": "noc",
+   "valid_pixels": 109258,
+   "epe": 0.6002992987632751,
+   "bad_pixels": 459,
+   "d1": 0.4201065368211024
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000084",
+   "mask": "all",
+   "valid_pixels": 95683,
+   "epe": 0.8658660650253296,
+   "bad_pixels": 2097,
+   "d1": 2.191611885078854
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000084",
+   "mask": "noc",
+   "valid_pixels": 94533,
+   "epe": 0.8545205593109131,
+   "bad_pixels": 1942,
+   "d1": 2.054309077253446
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000137",
+   "mask": "all",
+   "valid_pixels": 102721,
+   "epe": 0.7506144642829895,
+   "bad_pixels": 1029,
+   "d1": 1.0017425842816952
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000137",
+   "mask": "noc",
+   "valid_pixels": 101352,
+   "epe": 0.7519181370735168,
+   "bad_pixels": 1029,
+   "d1": 1.0152735022495856
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000157",
+   "mask": "all",
+   "valid_pixels": 103082,
+   "epe": 0.6533147692680359,
+   "bad_pixels": 1471,
+   "d1": 1.427019266215246
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000157",
+   "mask": "noc",
+   "valid_pixels": 101583,
+   "epe": 0.6476729512214661,
+   "bad_pixels": 1359,
+   "d1": 1.3378222734118899
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000140",
+   "mask": "all",
+   "valid_pixels": 97380,
+   "epe": 0.4942968189716339,
+   "bad_pixels": 512,
+   "d1": 0.5257753132059971
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000140",
+   "mask": "noc",
+   "valid_pixels": 96135,
+   "epe": 0.48794201016426086,
+   "bad_pixels": 452,
+   "d1": 0.47017215374213345
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000037",
+   "mask": "all",
+   "valid_pixels": 94180,
+   "epe": 0.7965055108070374,
+   "bad_pixels": 1496,
+   "d1": 1.5884476534296028
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000037",
+   "mask": "noc",
+   "valid_pixels": 92924,
+   "epe": 0.7939512133598328,
+   "bad_pixels": 1457,
+   "d1": 1.5679480005165514
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000007",
+   "mask": "all",
+   "valid_pixels": 109354,
+   "epe": 0.5715824365615845,
+   "bad_pixels": 1073,
+   "d1": 0.9812169650858679
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000007",
+   "mask": "noc",
+   "valid_pixels": 107484,
+   "epe": 0.559628427028656,
+   "bad_pixels": 985,
+   "d1": 0.9164154664880355
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000102",
+   "mask": "all",
+   "valid_pixels": 92701,
+   "epe": 0.6947668790817261,
+   "bad_pixels": 465,
+   "d1": 0.5016127118369813
+  },
+  {
+   "dataset": "kitti2015",
+   "index": "000102",
+   "mask": "noc",
+   "valid_pixels": 91486,
+   "epe": 0.6899735927581787,
+   "bad_pixels": 425,
+   "d1": 0.46455195330433074
+  }
+ ],
+ "middlebury": [
+  {
+   "scene": "Adirondack",
+   "valid_pixels": 1298347,
+   "bad_pixels": 9629,
+   "epe": 0.32834795117378235,
+   "bp2": 0.7416353255331587
+  },
+  {
+   "scene": "ArtL",
+   "valid_pixels": 291686,
+   "bad_pixels": 12057,
+   "epe": 1.2410297393798828,
+   "bp2": 4.133554575810975
+  },
+  {
+   "scene": "Jadeplant",
+   "valid_pixels": 983804,
+   "bad_pixels": 60596,
+   "epe": 2.7262260913848877,
+   "bp2": 6.159356945082557
+  },
+  {
+   "scene": "Motorcycle",
+   "valid_pixels": 1272527,
+   "bad_pixels": 36252,
+   "epe": 0.8057071566581726,
+   "bp2": 2.84881971070162
+  },
+  {
+   "scene": "MotorcycleE",
+   "valid_pixels": 1272527,
+   "bad_pixels": 33305,
+   "epe": 0.715594470500946,
+   "bp2": 2.6172332689208164
+  },
+  {
+   "scene": "Piano",
+   "valid_pixels": 1175736,
+   "bad_pixels": 17261,
+   "epe": 0.2946195900440216,
+   "bp2": 1.468101682690672
+  },
+  {
+   "scene": "PianoL",
+   "valid_pixels": 1175736,
+   "bad_pixels": 25853,
+   "epe": 0.3916098475456238,
+   "bp2": 2.198877979410344
+  },
+  {
+   "scene": "Pipes",
+   "valid_pixels": 1128277,
+   "bad_pixels": 46263,
+   "epe": 1.333926796913147,
+   "bp2": 4.100322881703695
+  },
+  {
+   "scene": "Playroom",
+   "valid_pixels": 1071752,
+   "bad_pixels": 18527,
+   "epe": 0.5222571492195129,
+   "bp2": 1.7286648403735192
+  },
+  {
+   "scene": "Playtable",
+   "valid_pixels": 1085355,
+   "bad_pixels": 20886,
+   "epe": 0.40196144580841064,
+   "bp2": 1.9243473333609742
+  },
+  {
+   "scene": "PlaytableP",
+   "valid_pixels": 1087601,
+   "bad_pixels": 20695,
+   "epe": 0.37541764974594116,
+   "bp2": 1.9028117848365347
+  },
+  {
+   "scene": "Recycle",
+   "valid_pixels": 1269790,
+   "bad_pixels": 15480,
+   "epe": 0.3072156310081482,
+   "bp2": 1.2190992211310532
+  },
+  {
+   "scene": "Shelves",
+   "valid_pixels": 1220097,
+   "bad_pixels": 17131,
+   "epe": 0.5362375974655151,
+   "bp2": 1.4040686928990072
+  },
+  {
+   "scene": "Teddy",
+   "valid_pixels": 586756,
+   "bad_pixels": 8720,
+   "epe": 0.3745858073234558,
+   "bp2": 1.4861373381780503
+  },
+  {
+   "scene": "Vintage",
+   "valid_pixels": 1232919,
+   "bad_pixels": 8918,
+   "epe": 0.3200356364250183,
+   "bp2": 0.7233240788729836
+  }
+ ]
+}

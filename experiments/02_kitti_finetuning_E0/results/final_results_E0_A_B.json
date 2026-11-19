@@ -1,0 +1,87 @@
+{
+  "experiment": "FoundationStereo zero-shot reproduction and KITTI fine-tuning with Middlebury retention check",
+  "paper": "FoundationStereo: Zero-Shot Stereo Matching (arXiv 2501.09898), https://github.com/NVlabs/FoundationStereo",
+  "base_checkpoint": "23-51-11 (model_best_bp2.pth, ViT-L)",
+
+  "metrics": {
+    "kitti": "EPE = pixel-weighted mean absolute disparity error (px). D1 = % of pixels with error > 3 px AND > 5% of GT (global = pixel-weighted; mean_image = average of per-image D1). 'all' = disp_occ GT, 'noc' = disp_noc GT.",
+    "middlebury": "Eval3 trainingH (15 scenes), half resolution, non-occluded pixels (mask0nocc == 255). EPE (px) and BP-2 = % of pixels with error > 2 px, pixel-weighted over all scenes.",
+    "inference": "valid_iters = 32, mixed precision, no extra downscaling"
+  },
+
+  "fine_tuning_setup": {
+    "trainable": "all layers except the DINOv2 backbone (frozen)",
+    "optimizer": "AdamW, lr 1e-5, weight decay 1e-5, grad clip 1.0",
+    "lr_schedule": "ReduceLROnPlateau on validation D1-noc (factor 0.5, patience 2)",
+    "loss": "Smooth-L1 over all GRU iterations, gamma 0.9 weighting, train_iters 12",
+    "batch": "1 random crop of 256x512 per step",
+    "max_steps": 5000,
+    "validation": "every 50 steps, early stopping after 3 evaluations without improvement"
+  },
+
+  "middlebury_reproduction": {
+    "zero_shot": { "epe": 0.3634, "bp2": 1.0987, "mean_scene_bp2": 1.1475 },
+    "paper_reported_bp2": 1.1,
+    "verdict": "reproduced"
+  },
+
+  "protocol_a": {
+    "description": "Cross-dataset: train on KITTI 2012, validate and test on disjoint KITTI 2015 splits",
+    "splits": { "train": "KITTI 2012, 194 pairs", "val": "KITTI 2015, 40 pairs", "test": "KITTI 2015, 160 held-out pairs" },
+    "seed": 2025,
+    "best_checkpoint_step": 350,
+    "stopped_at_step": 500,
+    "validation_curve_d1_noc": { "50": 2.0910, "100": 1.6543, "150": 1.5687, "200": 1.5094, "250": 1.4736, "300": 1.4675, "350": 1.4421, "400": 1.4486, "450": 1.5006, "500": 1.4674 },
+    "kitti": {
+      "zero_shot_val":   { "all": { "epe": 0.8745, "d1": 2.7182, "mean_image_d1": 2.7636 }, "noc": { "epe": 0.8661, "d1": 2.6866, "mean_image_d1": 2.7294 } },
+      "fine_tuned_val":  { "all": { "epe": 0.7369, "d1": 1.4720, "mean_image_d1": 1.4598 }, "noc": { "epe": 0.7292, "d1": 1.4421, "mean_image_d1": 1.4327 } },
+      "zero_shot_test":  { "all": { "epe": 0.8545, "d1": 2.8561, "mean_image_d1": 2.9054 }, "noc": { "epe": 0.8351, "d1": 2.7549, "mean_image_d1": 2.8204 } },
+      "fine_tuned_test": { "all": { "epe": 0.7343, "d1": 1.8623, "mean_image_d1": 1.7978 }, "noc": { "epe": 0.7152, "d1": 1.7146, "mean_image_d1": 1.6744 } }
+    },
+    "middlebury": {
+      "zero_shot":  { "epe": 0.3634, "bp2": 1.0987 },
+      "fine_tuned": { "epe": 0.6345, "bp2": 2.4225 }
+    }
+  },
+
+  "protocol_b": {
+    "description": "Train and validate on KITTI 2012 only, test on all of KITTI 2015 (KITTI 2015 never seen)",
+    "splits": { "train": "KITTI 2012, 155 pairs", "val": "KITTI 2012, 39 pairs", "test": "KITTI 2015, all 200 pairs" },
+    "seed": 2026,
+    "kitti": {
+      "zero_shot_val":   { "all": { "epe": 0.5897, "d1": 2.1502, "mean_image_d1": 2.2162 }, "noc": { "epe": 0.5487, "d1": 1.8960, "mean_image_d1": 1.9545 } },
+      "fine_tuned_val":  { "all": { "epe": 0.4789, "d1": 1.3138, "mean_image_d1": 1.3483 }, "noc": { "epe": 0.4055, "d1": 0.8921, "mean_image_d1": 0.9149 } },
+      "zero_shot_test":  { "all": { "epe": 0.8583, "d1": 2.8307, "mean_image_d1": 2.8774 }, "noc": { "epe": 0.8410, "d1": 2.7422, "mean_image_d1": 2.8022 } },
+      "fine_tuned_test": { "all": { "epe": 0.7319, "d1": 1.7005, "mean_image_d1": 1.6484 }, "noc": { "epe": 0.7155, "d1": 1.5948, "mean_image_d1": 1.5613 } }
+    },
+    "middlebury": {
+      "zero_shot":  { "epe": 0.3634, "bp2": 1.0987 },
+      "fine_tuned": { "epe": 0.6514, "bp2": 2.4036 }
+    }
+  },
+
+  "summary_table": [
+    { "model": "zero-shot",             "kitti15_test_d1_all": "2.8561 (A) / 2.8307 (B)", "kitti15_test_epe_all": "0.8545 (A) / 0.8583 (B)", "middlebury_bp2": 1.0987, "middlebury_epe": 0.3634 },
+    { "model": "protocol A fine-tuned", "kitti15_test_d1_all": 1.8623, "kitti15_test_epe_all": 0.7343, "middlebury_bp2": 2.4225, "middlebury_epe": 0.6345 },
+    { "model": "protocol B fine-tuned", "kitti15_test_d1_all": 1.7005, "kitti15_test_epe_all": 0.7319, "middlebury_bp2": 2.4036, "middlebury_epe": 0.6514 }
+  ],
+
+  "relative_change_vs_zero_shot_percent": {
+    "protocol_a": { "kitti15_test_d1_all": -34.8, "kitti15_test_epe_all": -14.1, "middlebury_bp2": 120.5, "middlebury_epe": 74.6 },
+    "protocol_b": { "kitti15_test_d1_all": -39.9, "kitti15_test_epe_all": -14.7, "middlebury_bp2": 118.8, "middlebury_epe": 79.3 }
+  },
+
+  "findings": [
+    "Zero-shot Middlebury BP-2 of 1.10% reproduces the paper's ~1.1%.",
+    "KITTI fine-tuning cuts KITTI 2015 D1-all by 35-40% within a few hundred steps (best checkpoint at step 350 for Protocol A).",
+    "Both KITTI-adapted models roughly double Middlebury BP-2 (1.10% -> ~2.4%): domain adaptation costs zero-shot generalization even with DINOv2 frozen.",
+    "Protocol B (never saw KITTI 2015) is slightly better on KITTI 2015 than Protocol A; test sets differ (200 vs 160 pairs), so this is indicative, not a strict comparison.",
+    "Forgetting on Middlebury is essentially the same for both protocols, so the cause is the shift to the KITTI domain itself, not which split was used."
+  ],
+
+  "sources": {
+    "protocol_a": "Colab run of colab_kitti_bundle_v2/notebook/foundationstereo_kitti_finetuning_v2.ipynb (log, 2026-11-16)",
+    "protocol_b": "C:/Users/ashuk/Downloads/kitti_experiment_summary.json and Colab log (2026-11-16)",
+    "middlebury_zero_shot": "foundationstereo_middlebury_resultscorrectmetric.zip; identical to the Colab rerun"
+  }
+}

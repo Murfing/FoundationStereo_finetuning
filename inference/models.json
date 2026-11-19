@@ -1,0 +1,42 @@
+{
+  "_note": "Paths are relative to this file. 'path' / 'adapter' can be a list: the first file that exists is used. 'adapter' is only used when no full checkpoint exists (zero-shot + LoRA adapter, merged). cfg.yaml must sit next to the zero-shot file.",
+  "models": {
+    "zero_shot": {
+      "path": ["models/zero_shot_foundationstereo.pth"],
+      "aliases": ["zs", "pretrained", "base"],
+      "description": "Original FoundationStereo weights (no fine-tuning)"
+    },
+    "E0_A": {
+      "path": ["models/E0_A_full_ft_protocol_a.pth", "models/protocol_a_finetuned.pth"],
+      "aliases": ["e0", "e0a", "protocol_a"],
+      "description": "Full fine-tune, Protocol A (train KITTI 2012, test KITTI 2015)"
+    },
+    "E0_B": {
+      "path": ["models/E0_B_full_ft_protocol_b.pth", "models/protocol_b_finetuned.pth"],
+      "aliases": ["e0b", "protocol_b"],
+      "description": "Full fine-tune, Protocol B (train/val KITTI 2012 155/39)"
+    },
+    "E1": {
+      "path": ["models/E1_bn_locked.pth"],
+      "aliases": ["e1_bn_locked", "bn_locked"],
+      "description": "Full fine-tune, BatchNorm statistics locked (Protocol A)"
+    },
+    "E2": {
+      "path": ["models/E2_gru_only.pth"],
+      "aliases": ["e2_gru_only", "gru_only"],
+      "description": "Only GRU update block + upsampler trained (Protocol A)"
+    },
+    "E3a": {
+      "path": ["models/E3a_lora_all.pth"],
+      "adapter": ["models/E3a_lora_all_adapter.pth", "models/E3a_lora_all_lora_adapter.pth"],
+      "aliases": ["e3a_lora_all", "lora_all"],
+      "description": "LoRA r=8 on all layers outside DepthAnything (Protocol A)"
+    },
+    "E3b": {
+      "path": ["models/E3b_lora_gru.pth"],
+      "adapter": ["models/E3b_lora_gru_adapter.pth", "models/E3b_lora_gru_lora_adapter.pth"],
+      "aliases": ["e3b_lora_gru", "lora_gru"],
+      "description": "LoRA r=8 on GRU block + upsampler (Protocol A)"
+    }
+  }
+}
